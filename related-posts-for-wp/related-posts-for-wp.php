@@ -3,10 +3,14 @@
 	Plugin Name: Related Posts for WordPress
 	Plugin URI: http://www.relatedpostsforwp.com/
 	Description: Related Posts for WordPress, the best way to display related posts in WordPress.
-	Version: 2.2.3
+	Version: 2.2.4
 	Author: Never5
 	Author URI: http://www.never5.com/
+	Requires at least: 5.0
+	Requires PHP: 7.2
 	License: GPL v3
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Text Domain: related-posts-for-wp
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -33,13 +37,14 @@ function rp4wp_load_plugin() {
 	if ( defined( 'RP4WP_PLUGIN_FILE' ) ) {
 		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		deactivate_plugins( plugin_basename( __FILE__ ) );
+
 		return false;
 	}
 
 	// Define
 	define( 'RP4WP_PLUGIN_FILE', __FILE__ );
 
-	require dirname( __FILE__ ) . '/vendor/autoload_52.php';
+	require dirname( __FILE__ ) . '/vendor/autoload.php';
 	require dirname( __FILE__ ) . '/includes/functions.php';
 
 	// Instantiate main plugin object

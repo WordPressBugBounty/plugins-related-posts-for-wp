@@ -2,9 +2,9 @@
 Contributors: never5, barrykooij
 Donate link: http://www.barrykooij.com/donate/
 Tags: related, inline related posts, similar posts, contextual relations, seo bounce rate, internal links
-Requires at least: 3.6
-Tested up to: 6.5.2
-Stable tag: 2.2.3
+Requires at least: 5.0
+Tested up to: 6.6.2
+Stable tag: 2.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 7.2
@@ -120,6 +120,10 @@ There is one custom table created for the post cache, this table will however no
 5. Related posts are automatically added below your posts!
 
 == Changelog ==
+
+= 2.2.4: September 27, 2024 =
+* Tweak: Added $rp4wp_post variable to rp4wp_post_title_html_values filter.
+* Tweak: Removed PHP 5.2 classmap autoloading support.
 
 = 2.2.3: April 16, 2024 =
 * Tweak: Adding empty string instead of null in add_submenu_page, fixes PHP 8.1 warnings.
