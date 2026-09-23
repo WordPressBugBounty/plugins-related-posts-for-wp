@@ -3,8 +3,8 @@ Contributors: never5, barrykooij
 Donate link: http://www.barrykooij.com/donate/
 Tags: related, inline related posts, similar posts, contextual relations, seo bounce rate, internal links
 Requires at least: 5.0
-Tested up to: 6.8.1
-Stable tag: 2.3.0
+Tested up to: 7.1
+Stable tag: 2.3.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 7.2
@@ -48,7 +48,7 @@ Everyone makes mistakes, so do we. That's why you can easily modify all automati
 Related Posts for WordPress has a related post shortcode allowing you to display related posts on any position within your content.
 
 = Widget =
-Related Posts for Wordpress has a related post widget allowing you to display related posts in any sidebar you'd like.
+Related Posts for WordPress has a related post widget allowing you to display related posts in any sidebar you'd like.
 
 **More information**
 
@@ -120,6 +120,13 @@ There is one custom table created for the post cache, this table will however no
 5. Related posts are automatically added below your posts!
 
 == Changelog ==
+
+= 2.3.1: September 23, 2026 =
+* Security: Fixed an SQL injection in bulk linking that could be abused by users with the Contributor role or higher.
+* Security: Users can now only add, remove or reorder related posts on posts they are allowed to edit.
+* Security: The installation wizard can now only be run by administrators.
+* Fix: Fixed a fatal error in the multisite notice on PHP 8.
+* Tweak: Tested up to WordPress 7.1.
 
 = 2.3.0: May 10th, 2025 =
 * Feature: Added support for an offset in the [rp4wp] shortcode.
