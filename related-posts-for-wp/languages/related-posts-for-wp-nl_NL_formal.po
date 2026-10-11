@@ -1,0 +1,790 @@
+# Copyright (C) 2017 Never5
+# This file is distributed under the GPL v3.
+# Translators:
+# Barry Kooij <mail@barrykooij.nl>, 2014,2016-2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Related Posts for WordPress\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/related-posts-for-wp\n"
+"POT-Creation-Date: 2026-10-11T18:23:08+00:00\n"
+"PO-Revision-Date: 2017-09-06 17:23+0000\n"
+"Last-Translator: Barry Kooij <mail@barrykooij.nl>\n"
+"Language-Team: Dutch (Netherlands) (http://www.transifex.com/barrykooijplugins/related-posts-for-wordpress/language/nl_NL/)\n"
+"Language: nl_NL_formal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: grunt-wp-i18n1.0.0\n"
+
+#. Plugin Name of the plugin
+#: related-posts-for-wp.php src/Frontend/Widget.php:28
+msgid "Related Posts for WordPress"
+msgstr "Related Posts for WordPress"
+
+#. Plugin URI of the plugin
+#: related-posts-for-wp.php
+msgid "http://www.relatedpostsforwp.com/"
+msgstr "http://www.relatedpostsforwp.com/"
+
+#. Description of the plugin
+#: related-posts-for-wp.php
+msgid "Related Posts for WordPress, the best way to display related posts in WordPress."
+msgstr "Related Posts for WordPress, de beste manier om gerelateerde berichten te tonen in WordPress."
+
+#. Author of the plugin
+#: related-posts-for-wp.php
+msgid "Never5"
+msgstr "Never5"
+
+#. Author URI of the plugin
+#: related-posts-for-wp.php
+msgid "http://www.never5.com/"
+msgstr "http://www.never5.com/"
+
+#. translators: 1: required PHP version, 2: required WordPress version
+#: related-posts-for-wp.php:66
+msgid "Related Posts for WordPress needs PHP %1$s and WordPress %2$s or newer. It does not run on this site until they are updated."
+msgstr "Related Posts for WordPress heeft PHP %1$s en WordPress %2$s of nieuwer nodig. De plugin werkt niet op deze site totdat ze zijn bijgewerkt."
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: related-posts-for-wp.php:89
+msgid "Related Posts for WordPress 3.0 works together with Related Posts for WordPress Premium 3.0. Please %1$supdate Premium%2$s. Until then, your current version of Premium keeps working on its own."
+msgstr "Related Posts for WordPress 3.0 werkt samen met Related Posts for WordPress Premium 3.0. %1$sWerk Premium bij%2$s. Tot die tijd blijft uw huidige versie van Premium op zichzelf werken."
+
+#: src/Admin/App/Assets.php:106
+msgid "The settings screen of Related Posts for WordPress is missing its scripts. Run npm run build in the plugin folder."
+msgstr "Het instellingenscherm van Related Posts for WordPress mist zijn scripts. Voer npm run build uit in de pluginmap."
+
+#: src/Admin/Assets.php:52
+msgid "Are you sure you want to delete this related post?"
+msgstr "Weet u zeker dat u dit gerelateerde bericht wilt verwijderen?"
+
+#: src/Admin/LinkScreen/ListTable.php:63 src/Admin/MetaBox/ManageLinks.php:53
+#: src/Admin/Wizard/Page.php:77 src/Settings/Settings.php:231
+msgid "Related Posts"
+msgstr "Gerelateerde Berichten"
+
+#: src/Admin/LinkScreen/ListTable.php:64
+msgid "All Posts"
+msgstr "Alle Berichten"
+
+#: src/Admin/LinkScreen/ListTable.php:118
+msgid "Title"
+msgstr "Titel"
+
+#: src/Admin/LinkScreen/ListTable.php:119
+msgid "Post Date"
+msgstr "Post Datum"
+
+#: src/Admin/LinkScreen/ListTable.php:301
+msgid "Link Post"
+msgstr "Link Bericht"
+
+#: src/Admin/LinkScreen/ListTable.php:334
+msgid "Link Posts"
+msgstr "Link Berichten"
+
+#: src/Admin/LinkScreen/Page.php:126
+msgid "Posts"
+msgstr "Berichten"
+
+#: src/Admin/LinkScreen/Page.php:127
+msgid "Cancel linking"
+msgstr "Annuleer linken"
+
+#: src/Admin/LinkScreen/Page.php:136
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/Admin/LinkScreen/Page.php:245 src/Admin/MetaBox/Ajax.php:113
+msgid "Related Posts for WordPress is moving its links to a new database table. Please try again in a moment."
+msgstr "Related Posts for WordPress verplaatst zijn links naar een nieuwe databasetabel. Probeer het zo meteen opnieuw."
+
+#: src/Admin/MetaBox/ManageLinks.php:81
+msgid "Add Related Posts"
+msgstr "Voeg gerelateerde posts toe"
+
+#: src/Admin/MetaBox/ManageLinks.php:100 src/Admin/MetaBox/ManageLinks.php:101
+msgid "Edit Post"
+msgstr "Bewerk Bericht"
+
+#: src/Admin/MetaBox/ManageLinks.php:103 src/Admin/MetaBox/ManageLinks.php:104
+msgid "Unlink Related Post"
+msgstr "Ontkoppel Related Post"
+
+#: src/Admin/MetaBox/ManageLinks.php:115
+msgid "No related posts found."
+msgstr "Geen gerelateerde berichten gevonden."
+
+#. translators: %d: how far the installation is, in percent
+#: src/Admin/Notices/Installing.php:75
+msgid "Related Posts for WordPress is linking your posts in the background (%d%%)."
+msgstr "Related Posts for WordPress koppelt uw berichten op de achtergrond (%d%%)."
+
+#: src/Admin/Notices/Installing.php:78 src/Install/Update.php:190
+msgid "View progress"
+msgstr "Voortgang bekijken"
+
+#: src/Admin/Notices/Installing.php:88
+msgid "The installation of Related Posts for WordPress stopped with an error."
+msgstr "De installatie van Related Posts for WordPress is gestopt met een fout."
+
+#: src/Admin/Notices/Installing.php:89
+msgid "See what happened"
+msgstr "Bekijk wat er gebeurde"
+
+#: src/Admin/Notices/Installing.php:100
+msgid "Woah! Looks like we weren't able to finish your Related Posts for WordPress installation wizard!"
+msgstr "Woah! Het ziet eruit dat de Related Posts for WordPress wizard nog niet klaar is!"
+
+#: src/Admin/Notices/Installing.php:101
+msgid "Finish the installation"
+msgstr "De installatie afronden"
+
+#: src/Admin/Notices/Installing.php:150 src/Install/Update.php:213
+msgid "Dismiss"
+msgstr "Verbergen"
+
+#: src/Admin/Notices/Mbstring.php:37
+msgid "Error:"
+msgstr "Foutmelding:"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:40
+msgid "The %s extension needs to be installed and activated for Related Posts for WP to work!"
+msgstr "De extensie %s moet geïnstalleerd en geactiveerd zijn om Related Posts for WP te laten werken!"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:46
+msgid "Please contact your host and ask them to install the %s PHP extension."
+msgstr "Neem contact op met uw hostingprovider en vraag of ze de PHP-extensie %s installeren."
+
+#: src/Admin/Notices/Multisite.php:32
+msgid "The free version of Related Posts for WordPress doesn't support WordPress Multisite/Network!"
+msgstr "De gratis versie van Related Posts for WordPress ondersteunt geen WordPress Multisite/netwerk!"
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: src/Admin/Notices/Multisite.php:36
+msgid "%1$sUpgrade to the premium version%2$s or disable the plugin."
+msgstr "%1$sUpgrade naar de premiumversie%2$s of schakel de plugin uit."
+
+#: src/Admin/Notices/Playground.php:40
+msgid ""
+"We noticed you're running the plugin in the WordPress playground.\n"
+"                    Our plugin currently doesn't work there, due to limitation on the side of the WP playground."
+msgstr ""
+"We zien dat u de plugin in de WordPress Playground gebruikt.\n"
+"                    Onze plugin werkt daar op dit moment niet, door een beperking van de WP Playground."
+
+#: src/Admin/Notices/Playground.php:47
+msgid "Related Posts for WP is not available inside the WordPress Playground!"
+msgstr "Related Posts for WP is niet beschikbaar in de WordPress Playground!"
+
+#: src/Admin/Notices/Playground.php:49
+msgid "For more information regarding our plugin:"
+msgstr "Meer informatie over onze plugin:"
+
+#: src/Admin/Notices/Playground.php:51
+msgid "View the tour on relatedpostsforwp.com"
+msgstr "Bekijk de rondleiding op relatedpostsforwp.com"
+
+#. translators: 1: bold opening tag, 2: bold closing tag
+#: src/Admin/Notices/Review.php:59
+msgid "You've been using %sRelated Posts for WordPress%s for some time now, could you please give it a review at wordpress.org?"
+msgstr "U gebruikt %sRelated Posts for WordPress%s nu al een tijdje. Wilt u er een review voor schrijven op wordpress.org?"
+
+#. translators: 1: review link opening tag, 2: link closing tag, 3: dismiss link opening tag, 4: link closing tag
+#: src/Admin/Notices/Review.php:66
+msgid "%sYes, take me there!%s - %sI've already done this!%s"
+msgstr "%sJa, breng me erheen!%s - %sDat heb ik al gedaan!%s"
+
+#: src/Admin/PluginLinks.php:38
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/Admin/PluginLinks.php:39 assets/build/admin/index.js:25
+msgid "Upgrade to Premium"
+msgstr "Upgrade naar Premium"
+
+#. translators: The title of the settings page: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:54 src/Admin/Wizard/Page.php:76
+#: assets/build/admin/index.js:25
+msgctxt "page title"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#. translators: The label of the settings page in the Settings menu: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:56
+msgctxt "menu label"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#: src/Admin/Settings/Page.php:83
+msgid "The settings of Related Posts for WordPress need JavaScript."
+msgstr "De instellingen van Related Posts for WordPress hebben JavaScript nodig."
+
+#: src/Admin/Wizard/Page.php:134
+msgid "Go to the settings of Related Posts for WordPress"
+msgstr "Ga naar de instellingen van Related Posts for WordPress"
+
+#: src/Database/Migrations.php:222
+msgid "Related Posts for WordPress could not update its database tables. It keeps working with the data it has, and tries again every ten minutes."
+msgstr "Related Posts for WordPress kon zijn databasetabellen niet bijwerken. Het werkt verder met de gegevens die het heeft en probeert het elke tien minuten opnieuw."
+
+#: src/Database/Migrations.php:224
+msgid "Try again"
+msgstr "Opnieuw proberen"
+
+#: src/Database/Migrations.php:239 src/Install/Update.php:228
+#: src/Install/Update.php:249
+msgid "Sorry, you are not allowed to do that."
+msgstr "U hebt geen toestemming om dat te doen."
+
+#: src/Frontend/Widget.php:29
+msgid "Display related posts."
+msgstr "Toon gerelateerde berichten."
+
+#: src/Install/Jobs/Queue.php:107
+msgid "An installation is running already."
+msgstr "Er loopt al een installatie."
+
+#: src/Install/Jobs/Queue.php:159
+msgid "There is no stopped installation to resume."
+msgstr "Er is geen gestopte installatie om te hervatten."
+
+#: src/Install/Jobs/Queue.php:333
+msgid "The steps of the installation changed while it ran. Please start it again."
+msgstr "De stappen van de installatie zijn veranderd terwijl die liep. Start de installatie opnieuw."
+
+#: src/Install/Planner.php:40
+msgid "The number of related posts to link to each post."
+msgstr "Het aantal gerelateerde berichten dat aan elk bericht wordt gekoppeld."
+
+#: src/Install/Planner.php:47
+msgid "Only cache the words of the posts, and link nothing."
+msgstr "Alleen de woorden van de berichten cachen, en niets koppelen."
+
+#: src/Install/Planner.php:52
+msgid "Remove every link and all cached words first, and install again."
+msgstr "Eerst alle koppelingen en alle gecachete woorden verwijderen, en opnieuw installeren."
+
+#: src/Install/Tasks/CacheWordsTask.php:49
+msgid "Caching posts"
+msgstr "Berichten cachen"
+
+#: src/Install/Tasks/LinkPostsTask.php:68
+msgid "Linking posts"
+msgstr "Berichten koppelen"
+
+#: src/Install/Tasks/ReindexWordsTask.php:62
+msgid "Reading your posts again"
+msgstr "Uw berichten opnieuw lezen"
+
+#: src/Install/Tasks/RelinkPostsTask.php:62
+msgid "Linking your posts again"
+msgstr "Uw berichten opnieuw koppelen"
+
+#: src/Install/Tasks/ResetTask.php:37
+msgid "Removing the old links and words"
+msgstr "De oude koppelingen en woorden verwijderen"
+
+#: src/Install/Tasks/SaveAmountTask.php:54
+msgid "Saving the settings"
+msgstr "De instellingen opslaan"
+
+#: src/Install/Tasks/WeighWordsTask.php:69
+msgid "Weighing the words"
+msgstr "Woorden wegen"
+
+#: src/Install/Update.php:138
+msgid "Updating your related posts"
+msgstr "Uw gerelateerde berichten worden bijgewerkt"
+
+#: src/Install/Update.php:139
+msgid "Your related posts are up to date."
+msgstr "Uw gerelateerde berichten zijn bijgewerkt."
+
+#: src/Install/Update.php:140
+msgid "The update of your related posts stopped"
+msgstr "Het bijwerken van uw gerelateerde berichten is gestopt"
+
+#: src/Install/Update.php:141
+msgid "The update of your related posts was cancelled"
+msgstr "Het bijwerken van uw gerelateerde berichten is geannuleerd"
+
+#: src/Install/Update.php:142
+msgid "Cancel the update of your related posts? Posts it did not reach keep their old related posts."
+msgstr "Het bijwerken van uw gerelateerde berichten annuleren? Berichten waar het nog niet aan toe kwam, houden hun oude gerelateerde berichten."
+
+#: src/Install/Update.php:143
+msgid "Cancel update"
+msgstr "Bijwerken annuleren"
+
+#. translators: %d: how far the update is, in percent
+#: src/Install/Update.php:187
+msgid "Related Posts for WordPress is updating your related posts in the background (%d%%). Every post keeps its related posts until it gets its new ones."
+msgstr "Related Posts for WordPress werkt uw gerelateerde berichten op de achtergrond bij (%d%%). Elk bericht houdt zijn gerelateerde berichten tot het de nieuwe krijgt."
+
+#: src/Install/Update.php:200
+msgid "The update of your related posts stopped. Posts it did not reach keep their old related posts until you resume it."
+msgstr "Het bijwerken van uw gerelateerde berichten is gestopt. Berichten waar het nog niet aan toe kwam, houden hun oude gerelateerde berichten tot u het hervat."
+
+#: src/Install/Update.php:201 assets/build/admin/index.js:16
+msgid "Resume"
+msgstr "Hervatten"
+
+#: src/Install/Update.php:210
+msgid "Your related posts are up to date. Related Posts for WordPress 3.0 finds related posts in a new, more precise way, and linked your posts again; the related posts you added by hand kept their place."
+msgstr "Uw gerelateerde berichten zijn bijgewerkt. Related Posts for WordPress 3.0 vindt gerelateerde berichten op een nieuwe, preciezere manier en heeft uw berichten opnieuw gekoppeld; de gerelateerde berichten die u zelf hebt toegevoegd, staan nog op hun plek."
+
+#: src/Install/Update.php:212
+msgid "What changed"
+msgstr "Wat er is veranderd"
+
+#: src/Rest/InstallController.php:126
+msgid "No installation is running."
+msgstr "Er loopt geen installatie."
+
+#: src/Rest/SettingsController.php:49
+msgid "The values to save, by field ID. Fields that are left out keep their value."
+msgstr "De waarden om op te slaan, per veld-ID. Velden die ontbreken houden hun waarde."
+
+#. translators: %s: a settings page ID
+#: src/Settings/Schema/Pages.php:164
+msgid "There is no settings page \"%s\"."
+msgstr "Er is geen instellingenpagina \"%s\"."
+
+#: src/Settings/Settings.php:206
+msgid "General"
+msgstr "Algemeen"
+
+#: src/Settings/Settings.php:207
+msgid "The following options affect the general behaviour of the plugin."
+msgstr "De volgende opties bepalen het algemene gedrag van de plugin."
+
+#: src/Settings/Settings.php:211
+msgid "Enable"
+msgstr "Activeren"
+
+#: src/Settings/Settings.php:212
+msgid "Checking this will enable automatically linking posts to new posts"
+msgstr "Door dit aan te vinken worden nieuwe berichten automatisch gekoppeld aan gerelateerde berichten"
+
+#: src/Settings/Settings.php:218
+msgid "Amount of Posts"
+msgstr "Aantal berichten"
+
+#: src/Settings/Settings.php:219
+msgid "The amount of automatically linked post"
+msgstr "Het aantal automatisch gekoppelde berichten"
+
+#: src/Settings/Settings.php:228
+msgid "Heading text"
+msgstr "Titel tekst"
+
+#: src/Settings/Settings.php:229
+msgid "The text that is displayed above the related posts. To disable, leave field empty."
+msgstr "De tekst die boven de gerelateerde berichten getoond wordt. Laat het veld leeg om dit uit te schakelen."
+
+#: src/Settings/Settings.php:235
+msgid "Excerpt length"
+msgstr "Samenvatting lengte"
+
+#: src/Settings/Settings.php:236
+msgid "The amount of words to be displayed below the title on website. To disable, set value to 0."
+msgstr "Het aantal woorden dat getoond wordt onder de titel. Vul 0 in om het uit te schakelen."
+
+#: src/Settings/Settings.php:246
+msgid "Styling"
+msgstr "Styling"
+
+#: src/Settings/Settings.php:247
+msgid "The following options affect how related posts are displayed on the frontend."
+msgstr "De volgende opties bepalen hoe gerelateerde berichten op de website getoond worden."
+
+#: src/Settings/Settings.php:251
+msgid "Display Image"
+msgstr "Afbeelding tonen"
+
+#: src/Settings/Settings.php:252
+msgid "Checking this will enable displaying featured images of related posts."
+msgstr "Door dit aan te vinken worden de uitgelichte afbeeldingen van gerelateerde berichten getoond."
+
+#: src/Settings/Settings.php:258
+msgid "CSS"
+msgstr "CSS"
+
+#: src/Settings/Settings.php:259
+msgid "Warning! This is an advanced feature! An error here will break frontend display. To disable, leave field empty."
+msgstr "Let op! Dit is een geavanceerde instelling! Een fout hier verstoort de weergave op de website. Laat dit veld leeg om het uit te schakelen."
+
+#. translators: 1: the custom property for the space between posts, 2: the custom property for the image width
+#: src/Settings/Settings.php:261
+msgid "To change only the space between posts or the image width, set %1$s or %2$s in your theme instead."
+msgstr "Wilt u alleen de ruimte tussen berichten of de breedte van de afbeelding aanpassen? Stel dan %1$s of %2$s in uw thema in."
+
+#: src/Settings/Settings.php:273
+msgid "Misc"
+msgstr "Overige"
+
+#: src/Settings/Settings.php:274
+msgid "A shelter for options that just don't fit in anywhere else."
+msgstr "Een opvang voor opties die nergens anders bij horen."
+
+#: src/Settings/Settings.php:278
+msgid "Remove Data on Uninstall?"
+msgstr "Verwijder gegevens bij deïnstallatie?"
+
+#: src/Settings/Settings.php:279
+msgid "Check this box if you would like to completely remove all of its data when the plugin is deleted."
+msgstr "Door dit aan te vinken zullen alle plugin gegevens verwijderd worden waneer u de plugin verwijderd."
+
+#: src/Settings/Settings.php:285
+msgid "Show love?"
+msgstr "Toon liefde?"
+
+#: src/Settings/Settings.php:286
+msgid "Display a 'Powered by' line under your related posts. <strong>BEWARE! Only for the real fans.</strong>"
+msgstr "Toon a 'Powered by' regel onder uw gerelateerde berichten. <strong>LET OP! Enkel voor de echte fans.</strong>"
+
+#: assets/build/admin/index.js:1
+msgid "The settings could not be loaded."
+msgstr "De instellingen konden niet worden geladen."
+
+#: assets/build/admin/index.js:1
+msgid "The installer could not be reached."
+msgstr "De installatie kon niet worden bereikt."
+
+#: assets/build/admin/index.js:1 assets/build/admin/index.js:25
+msgid "Installer"
+msgstr "Installatie"
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are linked."
+msgstr "Klaar! Uw berichten zijn gekoppeld."
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are read."
+msgstr "Klaar! Uw berichten zijn gelezen."
+
+#: assets/build/admin/index.js:1
+msgid "Every post shows its related posts now, and new posts are linked when you publish them."
+msgstr "Elk bericht toont nu zijn gerelateerde berichten, en nieuwe berichten worden gekoppeld zodra u ze publiceert."
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:4
+msgid "Link them from the %s tab when you are ready."
+msgstr "Koppel ze vanaf het tabblad %s wanneer u er klaar voor bent."
+
+#: assets/build/admin/index.js:4
+msgid "Close"
+msgstr "Sluiten"
+
+#: assets/build/admin/index.js:4
+msgid "Less than a minute left"
+msgstr "Nog minder dan een minuut"
+
+#. translators: %s: a number of minutes
+#: assets/build/admin/index.js:7
+msgid "About %s minute left"
+msgid_plural "About %s minutes left"
+msgstr[0] "Nog ongeveer %s minuut"
+msgstr[1] "Nog ongeveer %s minuten"
+
+#. translators: 1: what the installation does now, 2: the number of that step, 3: the number of steps
+#: assets/build/admin/index.js:10
+msgid "%1$s (%2$s/%3$s)"
+msgstr "%1$s (%2$s/%3$s)"
+
+#. translators: 1: posts done, 2: all posts
+#: assets/build/admin/index.js:13
+msgid "%1$s of %2$s posts"
+msgstr "%1$s van %2$s berichten"
+
+#: assets/build/admin/index.js:13
+msgid "The installation stopped"
+msgstr "De installatie is gestopt"
+
+#: assets/build/admin/index.js:13
+msgid "The installation was cancelled"
+msgstr "De installatie is geannuleerd"
+
+#: assets/build/admin/index.js:13
+msgid "Linking your related posts"
+msgstr "Uw gerelateerde berichten koppelen"
+
+#: assets/build/admin/index.js:13
+msgid "This runs in the background. You can leave this page; it goes on without you."
+msgstr "Dit loopt op de achtergrond. U kunt deze pagina verlaten; het gaat zonder u verder."
+
+#. translators: %d: how far the installation is, in percent
+#: assets/build/admin/index.js:16
+msgid "%d%%"
+msgstr "%d%%"
+
+#: assets/build/admin/index.js:16
+msgid "Installation progress"
+msgstr "Voortgang van de installatie"
+
+#: assets/build/admin/index.js:16
+msgid "Background processing is slow on this site, so this page is doing the work now. Keep it open to finish sooner, or come back later."
+msgstr "Taken op de achtergrond zijn traag op deze site, dus deze pagina doet nu het werk. Houd de pagina open om sneller klaar te zijn, of kom later terug."
+
+#: assets/build/admin/index.js:16
+msgid "Something went wrong."
+msgstr "Er ging iets mis."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept. Resume to finish the rest."
+msgstr "Wat al gedaan is, blijft bewaard. Hervat om de rest af te maken."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not resume."
+msgstr "De installatie kon niet worden hervat."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel the installation?"
+msgstr "De installatie annuleren?"
+
+#: assets/build/admin/index.js:16
+msgid "Cancel installation"
+msgstr "Installatie annuleren"
+
+#: assets/build/admin/index.js:16
+msgid "Keep running"
+msgstr "Laten doorlopen"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not be cancelled."
+msgstr "De installatie kon niet worden geannuleerd."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept, and you can resume later."
+msgstr "Wat al gedaan is, blijft bewaard, en u kunt later hervatten."
+
+#: assets/build/admin/index.js:16
+msgid "Related posts per post"
+msgstr "Gerelateerde berichten per bericht"
+
+#: assets/build/admin/index.js:16
+msgid "Get started"
+msgstr "Aan de slag"
+
+#: assets/build/admin/index.js:16
+msgid "Let's link your related posts"
+msgstr "Laten we uw gerelateerde berichten koppelen"
+
+#: assets/build/admin/index.js:16
+msgid "Related Posts reads your posts once to learn what each one is about, then links every post to the posts that are most related to it."
+msgstr "Related Posts leest uw berichten één keer om te leren waar elk bericht over gaat, en koppelt daarna elk bericht aan de berichten die er het meest aan verwant zijn."
+
+#: assets/build/admin/index.js:16
+msgid "It runs in the background, so you can leave this page while it works."
+msgstr "Dit loopt op de achtergrond, dus u kunt deze pagina verlaten terwijl het bezig is."
+
+#: assets/build/admin/index.js:16
+msgid "You can change this later, and link again at any time."
+msgstr "U kunt dit later wijzigen, en op elk moment opnieuw koppelen."
+
+#: assets/build/admin/index.js:16
+msgid "Link the posts right away"
+msgstr "De berichten meteen koppelen"
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:19
+msgid "Turn this off to only read the posts now, and link them later from the %s tab."
+msgstr "Zet dit uit om de berichten nu alleen te lezen, en ze later te koppelen vanaf het tabblad %s."
+
+#: assets/build/admin/index.js:19 assets/build/admin/index.js:25
+msgid "The installation could not start."
+msgstr "De installatie kon niet starten."
+
+#: assets/build/admin/index.js:19
+msgid "Start"
+msgstr "Starten"
+
+#: assets/build/admin/index.js:19
+msgid "The installation is done."
+msgstr "De installatie is klaar."
+
+#: assets/build/admin/index.js:19
+msgid "The installation stopped."
+msgstr "De installatie is gestopt."
+
+#. translators: %s: the plugin version
+#: assets/build/admin/index.js:22
+msgid "Version %s"
+msgstr "Versie %s"
+
+#: assets/build/admin/index.js:25
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/build/admin/index.js:25
+msgid "Related Posts settings"
+msgstr "Instellingen van Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Unsaved changes"
+msgstr "Niet-opgeslagen wijzigingen"
+
+#: assets/build/admin/index.js:25
+msgid "You have unsaved changes."
+msgstr "U hebt niet-opgeslagen wijzigingen."
+
+#: assets/build/admin/index.js:25
+msgid "Discard"
+msgstr "Verwerpen"
+
+#: assets/build/admin/index.js:25
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+#: assets/build/admin/index.js:25
+msgid "The settings could not be saved."
+msgstr "De instellingen konden niet worden opgeslagen."
+
+#: assets/build/admin/index.js:25
+msgid "Save changes"
+msgstr "Wijzigingen opslaan"
+
+#: assets/build/admin/index.js:25
+msgid "More about Related Posts"
+msgstr "Meer over Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Design the layout in the visual configurator"
+msgstr "Ontwerp de opmaak in de visuele configurator"
+
+#: assets/build/admin/index.js:25
+msgid "Relate pages, products and custom post types"
+msgstr "Koppel pagina's, producten en aangepaste berichttypes"
+
+#: assets/build/admin/index.js:25
+msgid "Choose what counts with adjustable weights"
+msgstr "Bepaal wat telt met instelbare gewichten"
+
+#: assets/build/admin/index.js:25
+msgid "Exclude posts and whole categories"
+msgstr "Sluit berichten en hele categorieën uit"
+
+#: assets/build/admin/index.js:25
+msgid "Older posts get your new posts too"
+msgstr "Oudere berichten krijgen ook uw nieuwe berichten"
+
+#: assets/build/admin/index.js:25
+msgid "See why posts are related"
+msgstr "Zie waarom berichten gerelateerd zijn"
+
+#: assets/build/admin/index.js:25
+msgid "Priority email support"
+msgstr "E-mailsupport met voorrang"
+
+#: assets/build/admin/index.js:25
+msgid "Take your related posts further"
+msgstr "Haal meer uit uw gerelateerde berichten"
+
+#: assets/build/admin/index.js:25
+msgid "Premium gives you control over what gets related and how it looks. It is an add-on for this plugin, so your settings and links stay as they are."
+msgstr "Met Premium bepaalt u wat er gerelateerd wordt en hoe het eruitziet. Het is een add-on voor deze plugin, dus uw instellingen en koppelingen blijven zoals ze zijn."
+
+#: assets/build/admin/index.js:25
+msgid "See all features"
+msgstr "Bekijk alle functies"
+
+#: assets/build/admin/index.js:25
+msgid "14 day money back guarantee"
+msgstr "14 dagen geld-terug-garantie"
+
+#: assets/build/admin/index.js:25
+msgid "Getting started"
+msgstr "Aan de slag"
+
+#: assets/build/admin/index.js:25
+msgid "Show related posts in your theme"
+msgstr "Toon gerelateerde berichten in uw thema"
+
+#: assets/build/admin/index.js:25
+msgid "Style the related posts with CSS"
+msgstr "Geef de gerelateerde berichten stijl met CSS"
+
+#: assets/build/admin/index.js:25
+msgid "All documentation"
+msgstr "Alle documentatie"
+
+#: assets/build/admin/index.js:25
+msgid "Need help?"
+msgstr "Hulp nodig?"
+
+#: assets/build/admin/index.js:25
+msgid "The documentation answers most questions."
+msgstr "De documentatie beantwoordt de meeste vragen."
+
+#: assets/build/admin/index.js:25
+msgid "Ask on the support forum"
+msgstr "Stel uw vraag op het supportforum"
+
+#: assets/build/admin/index.js:25
+msgid "Enjoying Related Posts?"
+msgstr "Blij met Related Posts?"
+
+#: assets/build/admin/index.js:25
+msgid "A review on WordPress.org helps other people find the plugin, and keeps it going."
+msgstr "Een review op WordPress.org helpt anderen de plugin te vinden, en houdt hem draaiende."
+
+#: assets/build/admin/index.js:25
+msgid "Leave a review"
+msgstr "Schrijf een review"
+
+#: assets/build/admin/index.js:25
+msgid "This page does not exist."
+msgstr "Deze pagina bestaat niet."
+
+#: assets/build/admin/index.js:25
+msgid "Restore default"
+msgstr "Standaard herstellen"
+
+#: assets/build/admin/index.js:25
+msgid "This option is overwritten by a filter."
+msgstr "Deze optie wordt overschreven door een filter."
+
+#: assets/build/admin/index.js:25
+msgid "An installation is running. You can start another one when it is done."
+msgstr "Er loopt een installatie. U kunt een nieuwe starten zodra die klaar is."
+
+#: assets/build/admin/index.js:25
+msgid "Link new posts"
+msgstr "Nieuwe berichten koppelen"
+
+#: assets/build/admin/index.js:25
+msgid "Read and link the posts that are not linked yet, for example posts from before automatic linking was on. Links that exist stay as they are."
+msgstr "Lees en koppel de berichten die nog niet gekoppeld zijn, bijvoorbeeld berichten van voordat automatisch koppelen aan stond. Bestaande koppelingen blijven zoals ze zijn."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything"
+msgstr "Alles opnieuw opbouwen"
+
+#: assets/build/admin/index.js:25
+msgid "Start over: remove every related post link, also the links you added by hand, read all posts again and link them. Your posts themselves are never touched."
+msgstr "Begin opnieuw: verwijder elke koppeling naar gerelateerde berichten, ook de koppelingen die u zelf hebt toegevoegd, lees alle berichten opnieuw en koppel ze. Uw berichten zelf blijven altijd onaangeroerd."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything?"
+msgstr "Alles opnieuw opbouwen?"
+
+#: assets/build/admin/index.js:25
+msgid "Remove links and rebuild"
+msgstr "Koppelingen verwijderen en opnieuw opbouwen"
+
+#: assets/build/admin/index.js:25
+msgid "Keep my links"
+msgstr "Mijn koppelingen behouden"
+
+#: assets/build/admin/index.js:25
+msgid "Every related post link is removed, including the links you added by hand. This can not be undone."
+msgstr "Elke koppeling naar gerelateerde berichten wordt verwijderd, ook de koppelingen die u zelf hebt toegevoegd. Dit kan niet ongedaan worden gemaakt."

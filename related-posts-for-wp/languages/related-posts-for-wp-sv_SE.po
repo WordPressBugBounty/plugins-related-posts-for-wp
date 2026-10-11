@@ -6,722 +6,786 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Related Posts for WordPress\n"
-"Report-Msgid-Bugs-To: https://github.com/barrykooij/related-posts-for-wp/issues\n"
-"POT-Creation-Date: 2017-09-06 17:17:09+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/related-posts-for-wp\n"
+"POT-Creation-Date: 2026-10-11T18:23:08+00:00\n"
 "PO-Revision-Date: 2017-09-06 17:20+0000\n"
 "Last-Translator: Barry Kooij <mail@barrykooij.nl>\n"
 "Language-Team: Swedish (Sweden) (http://www.transifex.com/barrykooijplugins/related-posts-for-wordpress/language/sv_SE/)\n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: grunt-wp-i18n1.0.0\n"
 
-#: classes/class-dependencies.php:27
-msgid "Error:"
-msgstr ""
-
-#: classes/class-is-installing-notice.php:74
-msgid ""
-"Woah! Looks like we weren't able to finish your Related Posts for WordPress "
-"installation wizard!"
-msgstr "Oj! Det ser ut som att vi inte kunde slutföra installationsguiden av Related Posts for WordPress!"
-
-#: classes/class-is-installing-notice.php:76
-msgid "%sResume the installation wizard%s or %sdismiss this notice%s"
-msgstr "%sÅteruppta installationsguiden%s eller %savfärda detta meddelande%s"
-
-#: classes/class-javascript-strings.php:14
-msgid "Are you sure you want to delete this related post?"
-msgstr "Är du säker på att du vill radera det här relaterade inlägget?"
-
-#: classes/class-javascript-strings.php:15
-msgid "Delete this post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:16
-msgid "Relink related posts"
-msgstr ""
-
-#: classes/class-javascript-strings.php:17
-msgid "Reinstall this post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:18
-msgid "Save post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:19
-msgid "Add post type"
-msgstr ""
-
-#: classes/class-link-related-table.php:45
-#: classes/hooks/class-hook-settings-page.php:20
-#: classes/meta-boxes/class-meta-box-manage.php:37
-#: classes/settings/class-settings-general.php:60
-msgid "Related Posts"
-msgstr "Relaterade inlägg"
-
-#: classes/class-link-related-table.php:46
-msgid "All Posts"
-msgstr "Alla inlägg"
-
-#: classes/class-link-related-table.php:95
-#: classes/settings/class-settings-weights.php:37
-msgid "Title"
-msgstr "Rubrik"
-
-#: classes/class-link-related-table.php:96
-#: classes/hooks/class-hook-page-install.php:191
-#: classes/hooks/class-hook-settings-page.php:155
-msgid "Post Type"
-msgstr "Posttyp"
-
-#: classes/class-link-related-table.php:97
-msgid "Post Date"
-msgstr ""
-
-#: classes/class-link-related-table.php:270
-msgid "Link Post"
-msgstr "Länka inlägg"
-
-#: classes/class-link-related-table.php:278
-msgid "View Post"
-msgstr ""
-
-#: classes/class-link-related-table.php:317
-msgid "Link Posts"
-msgstr "Länka inlägg"
-
-#: classes/class-post-type-manager.php:21
-#: classes/hooks/class-hook-link-related-screen.php:187
-msgid "Posts"
-msgstr "Inlägg"
-
-#: classes/class-post-type-manager.php:22
-msgid "Pages"
-msgstr "Sidor"
-
-#: classes/class-related-posts-widget.php:13
+#. Plugin Name of the plugin
+#: related-posts-for-wp.php src/Frontend/Widget.php:28
 msgid "Related Posts for WordPress"
-msgstr "Relaterade inlägg för WordPress"
+msgstr "Related Posts for WordPress"
 
-#: classes/class-related-posts-widget.php:14
-msgid "Display related posts."
-msgstr "Visa relaterade inlägg."
-
-#: classes/class-related-posts-widget.php:52
-msgid "Output template"
-msgstr ""
-
-#: classes/filters/class-filter-plugin-links.php:29
-msgid "Settings"
-msgstr "Inställningar"
-
-#: classes/hooks/class-hook-link-related-screen.php:189
-msgid "Cancel linking"
-msgstr "Avbryt länkning"
-
-#: classes/hooks/class-hook-link-related-screen.php:205
-msgid "Search"
-msgstr "Sök"
-
-#: classes/hooks/class-hook-page-install.php:59
-msgid "Welcome"
-msgstr "Välkommen"
-
-#: classes/hooks/class-hook-page-install.php:60
-msgid "Caching Posts"
-msgstr "Cachar inlägg"
-
-#: classes/hooks/class-hook-page-install.php:61
-msgid "Linking Posts"
-msgstr "Länkar inlägg"
-
-#: classes/hooks/class-hook-page-install.php:62
-msgid "Finished"
-msgstr "Avslutad"
-
-#: classes/hooks/class-hook-page-install.php:73
-msgid ""
-"Missing post type parameter, please report this incident via %sour "
-"website%s."
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:121
-msgid "Installation"
-msgstr "Installation"
-
-#: classes/hooks/class-hook-page-install.php:172
-#: classes/hooks/class-hook-page-install.php:243
-msgid "Thank you for choosing Related Posts for WordPress!"
-msgstr "Tack för att du valt Related Posts for WordPress!"
-
-#: classes/hooks/class-hook-page-install.php:173
-msgid ""
-"Below you'll find your post types available for installation, by installing "
-"a post type we'll set up a cache and offer you the ability to automatic link"
-" (custom) posts. To install a post type, simply click the 'Install Post "
-"Type' button."
-msgstr "Nedanför hittar du dina posttyper tillgängliga för installation. Genom att installera en posttyp skapar vi en cache och erbjuder dig möjligheten att automatiskt länka (egna) posttyper. För att installera en posttyp, klicka på 'Installera posttyp'-knappen."
-
-#: classes/hooks/class-hook-page-install.php:192
-msgid "Related to Post Types"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:227
-msgid "Edit this post type"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:244
-msgid ""
-"Before you can start using Related Posts for WordPress we need to cache your"
-" current posts."
-msgstr "Före du kan börja använda Related Posts for WooCommerce behöver vi cache'a ditt nuvarande inlägg."
-
-#: classes/hooks/class-hook-page-install.php:245
-msgid ""
-"This is a one time process which might take some time now, depending on the "
-"amount of posts you have, but will ensure your website's performance when "
-"using the plugin."
-msgstr "Detta är en engångsprocess som kan ta en viss tid nu, beroende på antalet inlägg du har, men som kommer att säkerställa din webbplats prestanda när du använder pluginet."
-
-#: classes/hooks/class-hook-page-install.php:247
-msgid ""
-"Do NOT close this window, wait for this process to finish and this wizard to"
-" take you to the next step."
-msgstr "Stäng INTE det här fönstret, vänta på att den här processen ska avslutas och guiden tar dig till nästa steg."
-
-#: classes/hooks/class-hook-page-install.php:273
-msgid "Great! All your posts were successfully cached!"
-msgstr "Strålande! Alla dina inlägg cachades!"
-
-#: classes/hooks/class-hook-page-install.php:274
-msgid ""
-"You can let me link your posts, based on what I think is related, to each "
-"other. And don't worry, if I made a mistake at one of your posts you can "
-"easily correct this by editing it manually!"
-msgstr "Du kan låta mig länka dina inlägg, baserat på vad jag anser vara relaterat. Och inga problem - om jag gör ett misstag kan du alltid justera det genom att ändra det manuellt."
-
-#: classes/hooks/class-hook-page-install.php:275
-msgid ""
-"Want me to start linking posts to each other? Fill in the amount of related "
-"posts each post should have and click on the \"Link now\" button. Rather "
-"link your posts manually? Click \"Skip linking\"."
-msgstr "Vill du att jag ska starta att länka inlägg mellan varandra? Fyll i det antal relaterade inlägg som varje inlägg ska ha och klicka på \"Länka nu\"-knappen. Vill du hellre länka dina inlägg manuellt? Klicka \"Hoppa över länkning\""
-
-#: classes/hooks/class-hook-page-install.php:276
-msgid ""
-"Do NOT close this window if you click the \"Link now\" button, wait for this"
-" process to finish and this wizard to take you to the next step."
-msgstr "Stäng INTE det här fönstret om du klickar \"Länka nu\"-knappen, vänta på att den här processen slutförs och guiden tar dig vidare till nästa steg."
-
-#: classes/hooks/class-hook-page-install.php:283
-msgid "Amount of related posts:"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:287
-msgid "The amount of related items per %s"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:293
-msgid "Maximum Post Age:"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:297
-msgid "The maximum age in days of %s that will be linked. (0 = unlimited)"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:304
-msgid "Link now"
-msgstr "Länka nu"
-
-#: classes/hooks/class-hook-page-install.php:306
-msgid "Skip linking"
-msgstr "Hoppa över länkning"
-
-#: classes/hooks/class-hook-page-install.php:324
-msgid "That's it, you're good to go!"
-msgstr "Det var det, nu kan du sätta igång!"
-
-#: classes/hooks/class-hook-page-install.php:325
-msgid ""
-"Thanks again for using Related Posts for WordPress and if you have any "
-"questions be sure to ask them at the %sWordPress.org forums.%s"
-msgstr "Tack igen för att du använder Related Posts for WordPress. Om du har några snabba frågor, ställ dem på %sWordPress.org forums.%s"
-
-#: classes/hooks/class-hook-page-install.php:328
-msgid "Click here to return to step 1"
-msgstr "Klicka här för att återvända till steg 1."
-
-#: classes/hooks/class-hook-page-install.php:334
-msgid "Click here to go to the settings page"
-msgstr "Klicka här för att gå till inställningssidan"
-
-#: classes/hooks/class-hook-settings-page.php:58
-msgid "Plugin version"
-msgstr "Pluginversion"
-
-#: classes/hooks/class-hook-settings-page.php:64
-msgid ""
-"Got a question? Simply send us an email at "
-"%ssupport@relatedpostsforwp.com%s. Please note that support requires an "
-"active license."
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:68
-msgid "More information"
-msgstr "Mer information"
-
-#: classes/hooks/class-hook-settings-page.php:70
-msgid "<a href='%s'>Documentation</a>"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:72
-msgid "<a href='%s'>Changelog</a>"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:74
-msgid "<a href='%s'>Give us a review</a>"
-msgstr "<a href='%s'>Ge oss en recension</a>"
-
-#: classes/hooks/class-hook-settings-page.php:76
-msgid "Check out our other plugins at Never5.com"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:81
-msgid "About Never5"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:85
-msgid ""
-"At %sNever5%s we create high quality premium WordPress plugins, with "
-"extensive support. We offer solutions in related posts, advanced download "
-"management, vehicle management and connecting post types."
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:87
-msgid "%sFollow Never5 on Twitter%s"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:113
-msgid "General"
-msgstr "Allmänt"
-
-#: classes/hooks/class-hook-settings-page.php:133
-msgid "Installer"
-msgstr "Installer"
-
-#: classes/meta-boxes/class-meta-box-manage.php:80
-msgid "Add Related Posts"
-msgstr "Lägg till relaterat inlägg"
-
-#: classes/meta-boxes/class-meta-box-manage.php:108
-#: classes/meta-boxes/class-meta-box-manage.php:109
-msgid "Edit Post"
-msgstr "Redigera inlägg"
-
-#: classes/meta-boxes/class-meta-box-manage.php:111
-#: classes/meta-boxes/class-meta-box-manage.php:112
-msgid "Unlink Related Post"
-msgstr "Ta bort länken för det relaterade inlägget"
-
-#: classes/meta-boxes/class-meta-box-manage.php:125
-msgid "No related posts found."
-msgstr "Inga relaterade inlägg hittades"
-
-#: classes/meta-boxes/class-meta-box-options.php:37
-msgid "Related Posts Options"
-msgstr ""
-
-#: classes/meta-boxes/class-meta-box-options.php:62
-msgid "Exclude"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:18
-#: classes/settings/class-settings-weights.php:51
-msgid "Categories"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:27
-msgid "Limit Post Categories"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:28
-msgid "Limit the categories related content is selected from."
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:34
-msgid "Select Categories"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:35
-msgid "Select what categories we need to select related content from."
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:18
-msgid "Styling"
-msgstr "Styling"
-
-#: classes/settings/class-settings-configurator.php:24
-msgid "Full control on how your related posts are displayed."
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:33
-msgid "Posts per row"
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:34
-msgid "The amount of related posts per row."
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:46
-msgid "Row fixed height"
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:47
-msgid ""
-"The fixed height per row in pixels, set to 0 to allow dynamic heights.."
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:53
-msgid "Custom CSS"
-msgstr "Egen CSS"
-
-#: classes/settings/class-settings-configurator.php:54
-msgid ""
-"Add custom CSS to selected theme. Warning! This is an advanced feature! An "
-"error here will break frontend display. To disable, leave field empty."
-msgstr "Lägg till egen CSS till det valda temat. Varning! Detta är en avancerad funktion! Ett fel här kan förstöra designen i frontend. Lämna tomt för att avaktivera."
-
-#: classes/settings/class-settings-general.php:18
-msgid "General settings for %s"
-msgstr "Generella inställningar för %s"
-
-#: classes/settings/class-settings-general.php:24
-msgid "Automatic %ss linking"
-msgstr "Automatisk %ss länkning"
-
-#: classes/settings/class-settings-general.php:25
-msgid ""
-"The following options affect how related posts are automatically linked for "
-"%ss."
-msgstr "Följande alternativ påverkar hur relaterade inlägg automatiskt länkas för %ss."
-
-#: classes/settings/class-settings-general.php:29
-msgid "Enable"
-msgstr "Aktivera"
-
-#: classes/settings/class-settings-general.php:30
-msgid "Checking this will enable automatically linking posts to new %ss"
-msgstr "Kryssa i den här för att automatiskt länka inlägg till nya %ss"
-
-#: classes/settings/class-settings-general.php:36
-msgid "Amount of Posts"
-msgstr "Antal inlägg"
-
-#: classes/settings/class-settings-general.php:37
-msgid "The amount of automatically linked %ss"
-msgstr "Antalet automatiskt länkade %ss"
-
-#: classes/settings/class-settings-general.php:43
-msgid "Maximum Post Age"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:44
-msgid "The maximum age in days of %ss that will be linked. (0 = unlimited)"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:52
-msgid "Frontend Settings"
-msgstr "Frontend-inställningar"
-
-#: classes/settings/class-settings-general.php:53
-msgid ""
-"The following options affect how related %ss are displayed on the frontend."
-msgstr "Följande alternativ påverkar hur relaterade %ss visas i frontend."
-
-#: classes/settings/class-settings-general.php:57
-msgid "Heading text"
-msgstr "Rubriktext"
-
-#: classes/settings/class-settings-general.php:58
-msgid ""
-"The text that is displayed above the related %ss. To disable, leave field "
-"empty."
-msgstr "Texten som visas ovanför relaterade %ss. Lämna tomt för att avaktivera."
-
-#: classes/settings/class-settings-general.php:64
-msgid "Excerpt length"
-msgstr "Utdragslängd"
-
-#: classes/settings/class-settings-general.php:65
-msgid ""
-"The amount of words to be displayed below the title on website. To disable, "
-"set value to 0."
-msgstr "Antalet ord som visas under rubriken på webbplatsen. Sätt värdet till 0 för att avaktivera."
-
-#: classes/settings/class-settings-general.php:73
-msgid "Thumbnail size"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:74
-msgid ""
-"These settings affect the display and dimensions of your related post "
-"thumbnails – the display on the front-end will still be affected by CSS "
-"styles. After changing these settings you may need to %sregenerate your "
-"thumbnails.%s"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:78
-msgid "Width"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:79
-msgid "Thumbnail's width in pixels."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:85
-msgid "Height"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:86
-msgid "Thumbnail's height in pixels."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:92
-msgid "Crop"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:93
-msgid "Crop the image from the center."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:101
-msgid "Thumbnail Placeholder"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:102
-msgid ""
-"The placeholder will be used if no featured image is set and no images could"
-" be found in the content."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:106
-msgid "Placeholder"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:107
-msgid ""
-"Thumbnail placeholder, the image that will be used if no other image is "
-"found."
-msgstr ""
-
-#: classes/settings/class-settings-license.php:18
-msgid "License"
-msgstr ""
-
-#: classes/settings/class-settings-license.php:29
-msgid "License Status"
-msgstr ""
-
-#: classes/settings/class-settings-license.php:36
-msgid "License Key"
-msgstr ""
-
-#: classes/settings/class-settings-license.php:37
-msgid ""
-"Your license key. You can find your license key in your %sMy Account%s page."
-msgstr ""
-
-#: classes/settings/class-settings-license.php:44
-msgid "Activation Email"
-msgstr ""
-
-#: classes/settings/class-settings-license.php:45
-msgid ""
-"Your activation email address. You can find your activation email address in"
-" your %sMy Account%s page."
-msgstr ""
-
-#: classes/settings/class-settings-misc.php:18
-msgid "Misc"
-msgstr "Övrigt"
-
-#: classes/settings/class-settings-misc.php:24
-msgid "Miscellaneous Settings"
-msgstr "Övriga inställningar"
-
-#: classes/settings/class-settings-misc.php:25
-msgid "A shelter for options that just don't fit in."
-msgstr "En tillflykt för inställningar som helt enkelt inte passar in."
-
-#: classes/settings/class-settings-misc.php:29
-msgid "Remove Data on Uninstall?"
-msgstr "Avlägsna data vid avinstallation?"
-
-#: classes/settings/class-settings-misc.php:30
-msgid ""
-"Check this box if you would like to completely remove all of its data when "
-"the plugin is deleted."
-msgstr "Kryssa i den här rutan om du vill avlägsna all data i samband med att pluginet raderas."
-
-#: classes/settings/class-settings-misc.php:36
-msgid "Show love?"
-msgstr ""
-
-#: classes/settings/class-settings-misc.php:37
-msgid ""
-"Display a 'Powered by' line under your related posts. <strong>BEWARE! Only "
-"for the real fans.</strong>"
-msgstr ""
-
-#: classes/settings/class-settings-misc.php:43
-msgid "Disable SSL Verification"
-msgstr ""
-
-#: classes/settings/class-settings-misc.php:44
-msgid ""
-"Disable SSL verification in license requests. Check this if you've got "
-"problems connecting to licensing server."
-msgstr ""
-
-#: classes/settings/class-settings-page.php:212
-msgid "Image URL"
-msgstr ""
-
-#: classes/settings/class-settings-page.php:213
-msgid "Upload Image"
-msgstr ""
-
-#: classes/settings/class-settings-page.php:471
-msgid "ACTIVATED"
-msgstr ""
-
-#: classes/settings/class-settings-page.php:473
-msgid "NOT ACTIVE"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:18
-msgid "Weights"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:24
-msgid "Weight settings"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:25
-msgid ""
-"Easily adjust the weights by using the sliders below. Please note that you "
-"need to rerun the installer after changing weights."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:29
-#: classes/settings/class-settings-weights.php:33
-msgid "Reset Weight"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:30
-msgid ""
-"Reset the weights back to their defaults. Don't forget to Save the Changes "
-"after resetting the weights."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:38
-msgid "The weight of the title."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:44
-msgid "Links"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:45
-msgid "The weight of the links found in the content."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:52
-msgid "The weight of the categories."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:58
-msgid "Tags"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:59
-msgid "The weight of the tags."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:65
-msgid "Custom Taxonomies"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:66
-msgid "The weight of custom taxonomies."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:18
-msgid "Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:24
-msgid "Word related options"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:25
-msgid ""
-"Control what extra words should be excluded and what word combinations "
-"should be parsed as a single word."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:29
-msgid "Extra Ignored Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:30
-msgid ""
-"By default we already ignore a lot of words based on your language that are "
-"not related to your content. In English this would be words like %s and %s."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:30
-msgid "Add the extra words you would to ignore here, one word per row."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:36
-msgid "Joined Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:37
-msgid ""
-"By default we split content per word but some word combinations should be "
-"considered as one word. An example of this would be %s."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:37
-msgid "Add your joined words here, one joined word per row."
-msgstr ""
-
-#: includes/updater/class-rp4wp-updater.php:131
-msgid "Hide notice"
-msgstr "Dölj meddelande"
-
-#. Plugin Name of the plugin/theme
-msgid "Related Posts for WordPress Premium"
-msgstr "Related Posts for WordPress Premium"
-
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
+#: related-posts-for-wp.php
 msgid "http://www.relatedpostsforwp.com/"
 msgstr "http://www.relatedpostsforwp.com/"
 
-#. Description of the plugin/theme
-msgid "The best way to display related posts in WordPress."
-msgstr "Det bästa sättet att visa relaterade inlägg i WordPress."
+#. Description of the plugin
+#: related-posts-for-wp.php
+msgid "Related Posts for WordPress, the best way to display related posts in WordPress."
+msgstr "Related Posts for WordPress, det bästa sättet att visa relaterade inlägg i WordPress."
 
-#. Author of the plugin/theme
+#. Author of the plugin
+#: related-posts-for-wp.php
 msgid "Never5"
-msgstr ""
+msgstr "Never5"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
+#: related-posts-for-wp.php
 msgid "http://www.never5.com/"
+msgstr "http://www.never5.com/"
+
+#. translators: 1: required PHP version, 2: required WordPress version
+#: related-posts-for-wp.php:66
+msgid "Related Posts for WordPress needs PHP %1$s and WordPress %2$s or newer. It does not run on this site until they are updated."
+msgstr "Related Posts for WordPress kräver PHP %1$s och WordPress %2$s eller senare. Tillägget körs inte på den här webbplatsen förrän de har uppdaterats."
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: related-posts-for-wp.php:89
+msgid "Related Posts for WordPress 3.0 works together with Related Posts for WordPress Premium 3.0. Please %1$supdate Premium%2$s. Until then, your current version of Premium keeps working on its own."
+msgstr "Related Posts for WordPress 3.0 fungerar tillsammans med Related Posts for WordPress Premium 3.0. %1$sUppdatera Premium%2$s. Till dess fortsätter din nuvarande version av Premium att fungera på egen hand."
+
+#: src/Admin/App/Assets.php:106
+msgid "The settings screen of Related Posts for WordPress is missing its scripts. Run npm run build in the plugin folder."
+msgstr "Inställningssidan för Related Posts for WordPress saknar sina skript. Kör npm run build i tilläggets mapp."
+
+#: src/Admin/Assets.php:52
+msgid "Are you sure you want to delete this related post?"
+msgstr "Är du säker på att du vill radera det här relaterade inlägget?"
+
+#: src/Admin/LinkScreen/ListTable.php:63 src/Admin/MetaBox/ManageLinks.php:53
+#: src/Admin/Wizard/Page.php:77 src/Settings/Settings.php:231
+msgid "Related Posts"
+msgstr "Relaterade inlägg"
+
+#: src/Admin/LinkScreen/ListTable.php:64
+msgid "All Posts"
+msgstr "Alla inlägg"
+
+#: src/Admin/LinkScreen/ListTable.php:118
+msgid "Title"
+msgstr "Rubrik"
+
+#: src/Admin/LinkScreen/ListTable.php:119
+msgid "Post Date"
+msgstr "Inläggsdatum"
+
+#: src/Admin/LinkScreen/ListTable.php:301
+msgid "Link Post"
+msgstr "Länka inlägg"
+
+#: src/Admin/LinkScreen/ListTable.php:334
+msgid "Link Posts"
+msgstr "Länka inlägg"
+
+#: src/Admin/LinkScreen/Page.php:126
+msgid "Posts"
+msgstr "Inlägg"
+
+#: src/Admin/LinkScreen/Page.php:127
+msgid "Cancel linking"
+msgstr "Avbryt länkning"
+
+#: src/Admin/LinkScreen/Page.php:136
+msgid "Search"
+msgstr "Sök"
+
+#: src/Admin/LinkScreen/Page.php:245 src/Admin/MetaBox/Ajax.php:113
+msgid "Related Posts for WordPress is moving its links to a new database table. Please try again in a moment."
+msgstr "Related Posts for WordPress flyttar sina länkar till en ny databastabell. Försök igen om en stund."
+
+#: src/Admin/MetaBox/ManageLinks.php:81
+msgid "Add Related Posts"
+msgstr "Lägg till relaterade inlägg"
+
+#: src/Admin/MetaBox/ManageLinks.php:100 src/Admin/MetaBox/ManageLinks.php:101
+msgid "Edit Post"
+msgstr "Redigera inlägg"
+
+#: src/Admin/MetaBox/ManageLinks.php:103 src/Admin/MetaBox/ManageLinks.php:104
+msgid "Unlink Related Post"
+msgstr "Ta bort länken för det relaterade inlägget"
+
+#: src/Admin/MetaBox/ManageLinks.php:115
+msgid "No related posts found."
+msgstr "Inga relaterade inlägg hittades"
+
+#. translators: %d: how far the installation is, in percent
+#: src/Admin/Notices/Installing.php:75
+msgid "Related Posts for WordPress is linking your posts in the background (%d%%)."
+msgstr "Related Posts for WordPress länkar dina inlägg i bakgrunden (%d%%)."
+
+#: src/Admin/Notices/Installing.php:78 src/Install/Update.php:190
+msgid "View progress"
+msgstr "Visa förlopp"
+
+#: src/Admin/Notices/Installing.php:88
+msgid "The installation of Related Posts for WordPress stopped with an error."
+msgstr "Installationen av Related Posts for WordPress stoppades på grund av ett fel."
+
+#: src/Admin/Notices/Installing.php:89
+msgid "See what happened"
+msgstr "Se vad som hände"
+
+#: src/Admin/Notices/Installing.php:100
+msgid "Woah! Looks like we weren't able to finish your Related Posts for WordPress installation wizard!"
+msgstr "Oj! Det ser ut som att installationen av Related Posts for WordPress inte slutfördes!"
+
+#: src/Admin/Notices/Installing.php:101
+msgid "Finish the installation"
+msgstr "Slutför installationen"
+
+#: src/Admin/Notices/Installing.php:150 src/Install/Update.php:213
+msgid "Dismiss"
+msgstr "Avfärda"
+
+#: src/Admin/Notices/Mbstring.php:37
+msgid "Error:"
+msgstr "Fel:"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:40
+msgid "The %s extension needs to be installed and activated for Related Posts for WP to work!"
+msgstr "Utökningen %s måste vara installerad och aktiverad för att Related Posts for WP ska fungera!"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:46
+msgid "Please contact your host and ask them to install the %s PHP extension."
+msgstr "Kontakta ditt webbhotell och be dem installera PHP-utökningen %s."
+
+#: src/Admin/Notices/Multisite.php:32
+msgid "The free version of Related Posts for WordPress doesn't support WordPress Multisite/Network!"
+msgstr "Den kostnadsfria versionen av Related Posts for WordPress stöder inte WordPress Multisite/nätverk!"
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: src/Admin/Notices/Multisite.php:36
+msgid "%1$sUpgrade to the premium version%2$s or disable the plugin."
+msgstr "%1$sUppgradera till premiumversionen%2$s eller inaktivera tillägget."
+
+#: src/Admin/Notices/Playground.php:40
+msgid ""
+"We noticed you're running the plugin in the WordPress playground.\n"
+"                    Our plugin currently doesn't work there, due to limitation on the side of the WP playground."
 msgstr ""
+"Vi märkte att du kör tillägget i WordPress Playground.\n"
+"                    Vårt tillägg fungerar för närvarande inte där, på grund av en begränsning i WP Playground."
+
+#: src/Admin/Notices/Playground.php:47
+msgid "Related Posts for WP is not available inside the WordPress Playground!"
+msgstr "Related Posts for WP är inte tillgängligt i WordPress Playground!"
+
+#: src/Admin/Notices/Playground.php:49
+msgid "For more information regarding our plugin:"
+msgstr "Mer information om vårt tillägg:"
+
+#: src/Admin/Notices/Playground.php:51
+msgid "View the tour on relatedpostsforwp.com"
+msgstr "Se rundturen på relatedpostsforwp.com"
+
+#. translators: 1: bold opening tag, 2: bold closing tag
+#: src/Admin/Notices/Review.php:59
+msgid "You've been using %sRelated Posts for WordPress%s for some time now, could you please give it a review at wordpress.org?"
+msgstr "Du har använt %sRelated Posts for WordPress%s ett tag nu. Vill du skriva en recension på wordpress.org?"
+
+#. translators: 1: review link opening tag, 2: link closing tag, 3: dismiss link opening tag, 4: link closing tag
+#: src/Admin/Notices/Review.php:66
+msgid "%sYes, take me there!%s - %sI've already done this!%s"
+msgstr "%sJa, ta mig dit!%s - %sDet har jag redan gjort!%s"
+
+#: src/Admin/PluginLinks.php:38
+msgid "Settings"
+msgstr "Inställningar"
+
+#: src/Admin/PluginLinks.php:39 assets/build/admin/index.js:25
+msgid "Upgrade to Premium"
+msgstr "Uppgradera till Premium"
+
+#. translators: The title of the settings page: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:54 src/Admin/Wizard/Page.php:76
+#: assets/build/admin/index.js:25
+msgctxt "page title"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#. translators: The label of the settings page in the Settings menu: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:56
+msgctxt "menu label"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#: src/Admin/Settings/Page.php:83
+msgid "The settings of Related Posts for WordPress need JavaScript."
+msgstr "Inställningarna för Related Posts for WordPress kräver JavaScript."
+
+#: src/Admin/Wizard/Page.php:134
+msgid "Go to the settings of Related Posts for WordPress"
+msgstr "Gå till inställningarna för Related Posts for WordPress"
+
+#: src/Database/Migrations.php:222
+msgid "Related Posts for WordPress could not update its database tables. It keeps working with the data it has, and tries again every ten minutes."
+msgstr "Related Posts for WordPress kunde inte uppdatera sina databastabeller. Det fortsätter att fungera med de data det har och försöker igen var tionde minut."
+
+#: src/Database/Migrations.php:224
+msgid "Try again"
+msgstr "Försök igen"
+
+#: src/Database/Migrations.php:239 src/Install/Update.php:228
+#: src/Install/Update.php:249
+msgid "Sorry, you are not allowed to do that."
+msgstr "Du har tyvärr inte behörighet att göra det."
+
+#: src/Frontend/Widget.php:29
+msgid "Display related posts."
+msgstr "Visa relaterade inlägg."
+
+#: src/Install/Jobs/Queue.php:107
+msgid "An installation is running already."
+msgstr "En installation pågår redan."
+
+#: src/Install/Jobs/Queue.php:159
+msgid "There is no stopped installation to resume."
+msgstr "Det finns ingen stoppad installation att återuppta."
+
+#: src/Install/Jobs/Queue.php:333
+msgid "The steps of the installation changed while it ran. Please start it again."
+msgstr "Installationens steg ändrades medan den kördes. Starta den igen."
+
+#: src/Install/Planner.php:40
+msgid "The number of related posts to link to each post."
+msgstr "Antalet relaterade inlägg som ska länkas till varje inlägg."
+
+#: src/Install/Planner.php:47
+msgid "Only cache the words of the posts, and link nothing."
+msgstr "Cacha bara inläggens ord, och länka ingenting."
+
+#: src/Install/Planner.php:52
+msgid "Remove every link and all cached words first, and install again."
+msgstr "Ta först bort alla länkar och alla cachade ord, och installera sedan igen."
+
+#: src/Install/Tasks/CacheWordsTask.php:49
+msgid "Caching posts"
+msgstr "Cachar inlägg"
+
+#: src/Install/Tasks/LinkPostsTask.php:68
+msgid "Linking posts"
+msgstr "Länkar inlägg"
+
+#: src/Install/Tasks/ReindexWordsTask.php:62
+msgid "Reading your posts again"
+msgstr "Läser dina inlägg igen"
+
+#: src/Install/Tasks/RelinkPostsTask.php:62
+msgid "Linking your posts again"
+msgstr "Länkar dina inlägg igen"
+
+#: src/Install/Tasks/ResetTask.php:37
+msgid "Removing the old links and words"
+msgstr "Tar bort gamla länkar och ord"
+
+#: src/Install/Tasks/SaveAmountTask.php:54
+msgid "Saving the settings"
+msgstr "Sparar inställningarna"
+
+#: src/Install/Tasks/WeighWordsTask.php:69
+msgid "Weighing the words"
+msgstr "Viktar orden"
+
+#: src/Install/Update.php:138
+msgid "Updating your related posts"
+msgstr "Uppdaterar dina relaterade inlägg till 3.0"
+
+#: src/Install/Update.php:139
+msgid "Your related posts are up to date."
+msgstr "Dina relaterade inlägg är uppdaterade."
+
+#: src/Install/Update.php:140
+msgid "The update of your related posts stopped"
+msgstr "Uppdateringen av dina relaterade inlägg till 3.0 stoppades"
+
+#: src/Install/Update.php:141
+msgid "The update of your related posts was cancelled"
+msgstr "Uppdateringen av dina relaterade inlägg till 3.0 avbröts"
+
+#: src/Install/Update.php:142
+msgid "Cancel the update of your related posts? Posts it did not reach keep their old related posts."
+msgstr "Avbryta uppdateringen av dina relaterade inlägg till 3.0? Inlägg som den inte har nått behåller sina gamla relaterade inlägg."
+
+#: src/Install/Update.php:143
+msgid "Cancel update"
+msgstr "Avbryt uppdateringen till 3.0"
+
+#. translators: %d: how far the update is, in percent
+#: src/Install/Update.php:187
+msgid "Related Posts for WordPress is updating your related posts in the background (%d%%). Every post keeps its related posts until it gets its new ones."
+msgstr "Related Posts for WordPress uppdaterar dina relaterade inlägg till 3.0 i bakgrunden (%d %%). Varje inlägg behåller sina relaterade inlägg tills det får sina nya."
+
+#: src/Install/Update.php:200
+msgid "The update of your related posts stopped. Posts it did not reach keep their old related posts until you resume it."
+msgstr "Uppdateringen av dina relaterade inlägg till 3.0 stoppades. Inlägg som den inte har nått behåller sina gamla relaterade inlägg tills du återupptar den."
+
+#: src/Install/Update.php:201 assets/build/admin/index.js:16
+msgid "Resume"
+msgstr "Återuppta"
+
+#: src/Install/Update.php:210
+msgid "Your related posts are up to date. Related Posts for WordPress 3.0 finds related posts in a new, more precise way, and linked your posts again; the related posts you added by hand kept their place."
+msgstr "Dina relaterade inlägg är uppdaterade. Related Posts for WordPress 3.0 hittar relaterade inlägg på ett nytt, mer exakt sätt och har länkat dina inlägg igen; de relaterade inlägg som du har lagt till för hand har behållit sin plats."
+
+#: src/Install/Update.php:212
+msgid "What changed"
+msgstr "Vad som har ändrats"
+
+#: src/Rest/InstallController.php:126
+msgid "No installation is running."
+msgstr "Ingen installation pågår."
+
+#: src/Rest/SettingsController.php:49
+msgid "The values to save, by field ID. Fields that are left out keep their value."
+msgstr "Värdena som ska sparas, per fält-ID. Fält som utelämnas behåller sitt värde."
+
+#. translators: %s: a settings page ID
+#: src/Settings/Schema/Pages.php:164
+msgid "There is no settings page \"%s\"."
+msgstr "Det finns ingen inställningssida \"%s\"."
+
+#: src/Settings/Settings.php:206
+msgid "General"
+msgstr "Allmänt"
+
+#: src/Settings/Settings.php:207
+msgid "The following options affect the general behaviour of the plugin."
+msgstr "Följande alternativ påverkar tilläggets allmänna beteende."
+
+#: src/Settings/Settings.php:211
+msgid "Enable"
+msgstr "Aktivera"
+
+#: src/Settings/Settings.php:212
+msgid "Checking this will enable automatically linking posts to new posts"
+msgstr "Om du kryssar i detta länkas nya inlägg automatiskt till relaterade inlägg"
+
+#: src/Settings/Settings.php:218
+msgid "Amount of Posts"
+msgstr "Antal inlägg"
+
+#: src/Settings/Settings.php:219
+msgid "The amount of automatically linked post"
+msgstr "Antalet automatiskt länkade inlägg"
+
+#: src/Settings/Settings.php:228
+msgid "Heading text"
+msgstr "Rubriktext"
+
+#: src/Settings/Settings.php:229
+msgid "The text that is displayed above the related posts. To disable, leave field empty."
+msgstr "Texten som visas ovanför de relaterade inläggen. Lämna fältet tomt för att inaktivera."
+
+#: src/Settings/Settings.php:235
+msgid "Excerpt length"
+msgstr "Utdragslängd"
+
+#: src/Settings/Settings.php:236
+msgid "The amount of words to be displayed below the title on website. To disable, set value to 0."
+msgstr "Antalet ord som visas under rubriken på webbplatsen. Sätt värdet till 0 för att avaktivera."
+
+#: src/Settings/Settings.php:246
+msgid "Styling"
+msgstr "Styling"
+
+#: src/Settings/Settings.php:247
+msgid "The following options affect how related posts are displayed on the frontend."
+msgstr "Följande alternativ påverkar hur relaterade inlägg visas på webbplatsen."
+
+#: src/Settings/Settings.php:251
+msgid "Display Image"
+msgstr "Visa bild"
+
+#: src/Settings/Settings.php:252
+msgid "Checking this will enable displaying featured images of related posts."
+msgstr "Om du kryssar i detta visas utvalda bilder för relaterade inlägg."
+
+#: src/Settings/Settings.php:258
+msgid "CSS"
+msgstr "CSS"
+
+#: src/Settings/Settings.php:259
+msgid "Warning! This is an advanced feature! An error here will break frontend display. To disable, leave field empty."
+msgstr "Varning! Detta är en avancerad funktion! Ett fel här förstör visningen på webbplatsen. Lämna fältet tomt för att inaktivera."
+
+#. translators: 1: the custom property for the space between posts, 2: the custom property for the image width
+#: src/Settings/Settings.php:261
+msgid "To change only the space between posts or the image width, set %1$s or %2$s in your theme instead."
+msgstr "Om du bara vill ändra avståndet mellan inläggen eller bildbredden kan du i stället ange %1$s eller %2$s i ditt tema."
+
+#: src/Settings/Settings.php:273
+msgid "Misc"
+msgstr "Övrigt"
+
+#: src/Settings/Settings.php:274
+msgid "A shelter for options that just don't fit in anywhere else."
+msgstr "En tillflykt för alternativ som inte passar in någon annanstans."
+
+#: src/Settings/Settings.php:278
+msgid "Remove Data on Uninstall?"
+msgstr "Avlägsna data vid avinstallation?"
+
+#: src/Settings/Settings.php:279
+msgid "Check this box if you would like to completely remove all of its data when the plugin is deleted."
+msgstr "Kryssa i den här rutan om du vill avlägsna all data i samband med att pluginet raderas."
+
+#: src/Settings/Settings.php:285
+msgid "Show love?"
+msgstr "Visa kärlek?"
+
+#: src/Settings/Settings.php:286
+msgid "Display a 'Powered by' line under your related posts. <strong>BEWARE! Only for the real fans.</strong>"
+msgstr "Visa en rad med 'Powered by' under dina relaterade inlägg. <strong>VARNING! Endast för de riktiga fansen.</strong>"
+
+#: assets/build/admin/index.js:1
+msgid "The settings could not be loaded."
+msgstr "Inställningarna kunde inte laddas."
+
+#: assets/build/admin/index.js:1
+msgid "The installer could not be reached."
+msgstr "Det gick inte att nå installationen."
+
+#: assets/build/admin/index.js:1 assets/build/admin/index.js:25
+msgid "Installer"
+msgstr "Installation"
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are linked."
+msgstr "Klart! Dina inlägg är länkade."
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are read."
+msgstr "Klart! Dina inlägg är inlästa."
+
+#: assets/build/admin/index.js:1
+msgid "Every post shows its related posts now, and new posts are linked when you publish them."
+msgstr "Alla inlägg visar nu sina relaterade inlägg, och nya inlägg länkas när du publicerar dem."
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:4
+msgid "Link them from the %s tab when you are ready."
+msgstr "Länka dem från fliken %s när du är redo."
+
+#: assets/build/admin/index.js:4
+msgid "Close"
+msgstr "Stäng"
+
+#: assets/build/admin/index.js:4
+msgid "Less than a minute left"
+msgstr "Mindre än en minut kvar"
+
+#. translators: %s: a number of minutes
+#: assets/build/admin/index.js:7
+msgid "About %s minute left"
+msgid_plural "About %s minutes left"
+msgstr[0] "Ungefär %s minut kvar"
+msgstr[1] "Ungefär %s minuter kvar"
+
+#. translators: 1: what the installation does now, 2: the number of that step, 3: the number of steps
+#: assets/build/admin/index.js:10
+msgid "%1$s (%2$s/%3$s)"
+msgstr "%1$s (%2$s/%3$s)"
+
+#. translators: 1: posts done, 2: all posts
+#: assets/build/admin/index.js:13
+msgid "%1$s of %2$s posts"
+msgstr "%1$s av %2$s inlägg"
+
+#: assets/build/admin/index.js:13
+msgid "The installation stopped"
+msgstr "Installationen stoppades"
+
+#: assets/build/admin/index.js:13
+msgid "The installation was cancelled"
+msgstr "Installationen avbröts"
+
+#: assets/build/admin/index.js:13
+msgid "Linking your related posts"
+msgstr "Länkar dina relaterade inlägg"
+
+#: assets/build/admin/index.js:13
+msgid "This runs in the background. You can leave this page; it goes on without you."
+msgstr "Det här körs i bakgrunden. Du kan lämna sidan; arbetet fortsätter utan dig."
+
+#. translators: %d: how far the installation is, in percent
+#: assets/build/admin/index.js:16
+msgid "%d%%"
+msgstr "%d%%"
+
+#: assets/build/admin/index.js:16
+msgid "Installation progress"
+msgstr "Installationens förlopp"
+
+#: assets/build/admin/index.js:16
+msgid "Background processing is slow on this site, so this page is doing the work now. Keep it open to finish sooner, or come back later."
+msgstr "Bakgrundsbearbetningen är långsam på den här webbplatsen, så den här sidan gör jobbet nu. Håll sidan öppen så blir det klart snabbare, eller kom tillbaka senare."
+
+#: assets/build/admin/index.js:16
+msgid "Something went wrong."
+msgstr "Något gick fel."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept. Resume to finish the rest."
+msgstr "Det som redan är gjort sparas. Återuppta för att slutföra resten."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not resume."
+msgstr "Installationen kunde inte återupptas."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel the installation?"
+msgstr "Avbryta installationen?"
+
+#: assets/build/admin/index.js:16
+msgid "Cancel installation"
+msgstr "Avbryt installationen"
+
+#: assets/build/admin/index.js:16
+msgid "Keep running"
+msgstr "Låt den fortsätta"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not be cancelled."
+msgstr "Installationen kunde inte avbrytas."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept, and you can resume later."
+msgstr "Det som redan är gjort sparas, och du kan återuppta senare."
+
+#: assets/build/admin/index.js:16
+msgid "Related posts per post"
+msgstr "Relaterade inlägg per inlägg"
+
+#: assets/build/admin/index.js:16
+msgid "Get started"
+msgstr "Kom igång"
+
+#: assets/build/admin/index.js:16
+msgid "Let's link your related posts"
+msgstr "Nu länkar vi dina relaterade inlägg"
+
+#: assets/build/admin/index.js:16
+msgid "Related Posts reads your posts once to learn what each one is about, then links every post to the posts that are most related to it."
+msgstr "Related Posts läser in dina inlägg en gång för att lära sig vad vart och ett handlar om, och länkar sedan varje inlägg till de inlägg som är mest relaterade till det."
+
+#: assets/build/admin/index.js:16
+msgid "It runs in the background, so you can leave this page while it works."
+msgstr "Det körs i bakgrunden, så du kan lämna sidan medan det pågår."
+
+#: assets/build/admin/index.js:16
+msgid "You can change this later, and link again at any time."
+msgstr "Du kan ändra detta senare och länka igen när som helst."
+
+#: assets/build/admin/index.js:16
+msgid "Link the posts right away"
+msgstr "Länka inläggen direkt"
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:19
+msgid "Turn this off to only read the posts now, and link them later from the %s tab."
+msgstr "Stäng av detta för att bara läsa in inläggen nu och länka dem senare från fliken %s."
+
+#: assets/build/admin/index.js:19 assets/build/admin/index.js:25
+msgid "The installation could not start."
+msgstr "Installationen kunde inte starta."
+
+#: assets/build/admin/index.js:19
+msgid "Start"
+msgstr "Starta"
+
+#: assets/build/admin/index.js:19
+msgid "The installation is done."
+msgstr "Installationen är klar."
+
+#: assets/build/admin/index.js:19
+msgid "The installation stopped."
+msgstr "Installationen stoppades."
+
+#. translators: %s: the plugin version
+#: assets/build/admin/index.js:22
+msgid "Version %s"
+msgstr "Version %s"
+
+#: assets/build/admin/index.js:25
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/build/admin/index.js:25
+msgid "Related Posts settings"
+msgstr "Inställningar för Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Unsaved changes"
+msgstr "Osparade ändringar"
+
+#: assets/build/admin/index.js:25
+msgid "You have unsaved changes."
+msgstr "Du har osparade ändringar."
+
+#: assets/build/admin/index.js:25
+msgid "Discard"
+msgstr "Förkasta"
+
+#: assets/build/admin/index.js:25
+msgid "Settings saved."
+msgstr "Inställningarna har sparats."
+
+#: assets/build/admin/index.js:25
+msgid "The settings could not be saved."
+msgstr "Inställningarna kunde inte sparas."
+
+#: assets/build/admin/index.js:25
+msgid "Save changes"
+msgstr "Spara ändringar"
+
+#: assets/build/admin/index.js:25
+msgid "More about Related Posts"
+msgstr "Mer om Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Design the layout in the visual configurator"
+msgstr "Utforma layouten i den visuella konfiguratorn"
+
+#: assets/build/admin/index.js:25
+msgid "Relate pages, products and custom post types"
+msgstr "Relatera sidor, produkter och anpassade inläggstyper"
+
+#: assets/build/admin/index.js:25
+msgid "Choose what counts with adjustable weights"
+msgstr "Välj vad som räknas med justerbara vikter"
+
+#: assets/build/admin/index.js:25
+msgid "Exclude posts and whole categories"
+msgstr "Exkludera inlägg och hela kategorier"
+
+#: assets/build/admin/index.js:25
+msgid "Older posts get your new posts too"
+msgstr "Äldre inlägg får också dina nya inlägg"
+
+#: assets/build/admin/index.js:25
+msgid "See why posts are related"
+msgstr "Se varför inlägg är relaterade"
+
+#: assets/build/admin/index.js:25
+msgid "Priority email support"
+msgstr "Prioriterad support via e-post"
+
+#: assets/build/admin/index.js:25
+msgid "Take your related posts further"
+msgstr "Få ut mer av dina relaterade inlägg"
+
+#: assets/build/admin/index.js:25
+msgid "Premium gives you control over what gets related and how it looks. It is an add-on for this plugin, so your settings and links stay as they are."
+msgstr "Med Premium styr du vad som relateras och hur det ser ut. Det är en utökning av det här tillägget, så dina inställningar och länkar förblir som de är."
+
+#: assets/build/admin/index.js:25
+msgid "See all features"
+msgstr "Se alla funktioner"
+
+#: assets/build/admin/index.js:25
+msgid "14 day money back guarantee"
+msgstr "14 dagars pengarna-tillbaka-garanti"
+
+#: assets/build/admin/index.js:25
+msgid "Getting started"
+msgstr "Kom igång"
+
+#: assets/build/admin/index.js:25
+msgid "Show related posts in your theme"
+msgstr "Visa relaterade inlägg i ditt tema"
+
+#: assets/build/admin/index.js:25
+msgid "Style the related posts with CSS"
+msgstr "Ge de relaterade inläggen stil med CSS"
+
+#: assets/build/admin/index.js:25
+msgid "All documentation"
+msgstr "All dokumentation"
+
+#: assets/build/admin/index.js:25
+msgid "Need help?"
+msgstr "Behöver du hjälp?"
+
+#: assets/build/admin/index.js:25
+msgid "The documentation answers most questions."
+msgstr "Dokumentationen besvarar de flesta frågor."
+
+#: assets/build/admin/index.js:25
+msgid "Ask on the support forum"
+msgstr "Fråga i supportforumet"
+
+#: assets/build/admin/index.js:25
+msgid "Enjoying Related Posts?"
+msgstr "Gillar du Related Posts?"
+
+#: assets/build/admin/index.js:25
+msgid "A review on WordPress.org helps other people find the plugin, and keeps it going."
+msgstr "Ett omdöme på WordPress.org hjälper andra att hitta tillägget och håller det vid liv."
+
+#: assets/build/admin/index.js:25
+msgid "Leave a review"
+msgstr "Skriv ett omdöme"
+
+#: assets/build/admin/index.js:25
+msgid "This page does not exist."
+msgstr "Den här sidan finns inte."
+
+#: assets/build/admin/index.js:25
+msgid "Restore default"
+msgstr "Återställ standard"
+
+#: assets/build/admin/index.js:25
+msgid "This option is overwritten by a filter."
+msgstr "Detta alternativ skrivs över av ett filter."
+
+#: assets/build/admin/index.js:25
+msgid "An installation is running. You can start another one when it is done."
+msgstr "En installation pågår. Du kan starta en ny när den är klar."
+
+#: assets/build/admin/index.js:25
+msgid "Link new posts"
+msgstr "Länka nya inlägg"
+
+#: assets/build/admin/index.js:25
+msgid "Read and link the posts that are not linked yet, for example posts from before automatic linking was on. Links that exist stay as they are."
+msgstr "Läs in och länka de inlägg som inte är länkade än, till exempel inlägg från innan automatisk länkning var aktiverad. Befintliga länkar lämnas som de är."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything"
+msgstr "Bygg om allt"
+
+#: assets/build/admin/index.js:25
+msgid "Start over: remove every related post link, also the links you added by hand, read all posts again and link them. Your posts themselves are never touched."
+msgstr "Börja om: ta bort alla länkar till relaterade inlägg, även dem du har lagt till manuellt, läs in alla inlägg igen och länka dem. Själva inläggen påverkas aldrig."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything?"
+msgstr "Bygga om allt?"
+
+#: assets/build/admin/index.js:25
+msgid "Remove links and rebuild"
+msgstr "Ta bort länkar och bygg om"
+
+#: assets/build/admin/index.js:25
+msgid "Keep my links"
+msgstr "Behåll mina länkar"
+
+#: assets/build/admin/index.js:25
+msgid "Every related post link is removed, including the links you added by hand. This can not be undone."
+msgstr "Alla länkar till relaterade inlägg tas bort, även dem du har lagt till manuellt. Detta kan inte ångras."

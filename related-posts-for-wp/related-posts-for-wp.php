@@ -1,65 +1,160 @@
 <?php
-/*
-	Plugin Name: Related Posts for WordPress
-	Plugin URI: http://www.relatedpostsforwp.com/
-	Description: Related Posts for WordPress, the best way to display related posts in WordPress.
-	Version: 2.3.1
-	Author: Never5
-	Author URI: http://www.never5.com/
-	Requires at least: 5.0
-	Requires PHP: 7.2
-	License: GPL v3
-	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Text Domain: related-posts-for-wp
-
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
+/**
+ * Related Posts for WordPress
+ *
+ * @package   RelatedPostsForWP
+ * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License, version 3 or higher
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Related Posts for WordPress
+ * Plugin URI:        http://www.relatedpostsforwp.com/
+ * Description:       Related Posts for WordPress, the best way to display related posts in WordPress.
+ * Version:           3.0.0
+ * Author:            Never5
+ * Author URI:        http://www.never5.com/
+ * Requires at least: 6.8
+ * Requires PHP:      8.0
+ * License:           GPL v3
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:       related-posts-for-wp
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } // Exit if accessed directly
 
-function rp4wp_load_plugin() {
+/*
+ * Keep this file parseable by PHP 7.0: a site that gets this version through FTP or WP-CLI on an old PHP version must
+ * see the requirements notice instead of a fatal error. WordPress itself blocks updating and activating on old versions.
+ */
 
-	// Deactivate own plugin if Premium is loaded
-	if ( defined( 'RP4WP_PLUGIN_FILE' ) ) {
-		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		deactivate_plugins( plugin_basename( __FILE__ ) );
-
-		return false;
-	}
-
-	// Define
-	define( 'RP4WP_PLUGIN_FILE', __FILE__ );
-
-	require dirname( __FILE__ ) . '/vendor/autoload.php';
-	require dirname( __FILE__ ) . '/includes/functions.php';
-
-	// Instantiate main plugin object
-	RP4WP();
+/**
+ * Whether this site meets the requirements of this version of the plugin.
+ *
+ * @return bool
+ */
+function rp4wp_meets_requirements() {
+	return version_compare( PHP_VERSION, '8.0', '>=' ) && version_compare( get_bloginfo( 'version' ), '6.8', '>=' );
 }
 
-// Create object - Plugin init
+/**
+ * Tell admins why the plugin does not run.
+ *
+ * @return void
+ */
+function rp4wp_requirements_notice() {
+	if ( ! current_user_can( 'activate_plugins' ) ) {
+		return;
+	}
+
+	echo '<div class="notice notice-error"><p>';
+	printf(
+		/* translators: 1: required PHP version, 2: required WordPress version */
+		esc_html__( 'Related Posts for WordPress needs PHP %1$s and WordPress %2$s or newer. It does not run on this site until they are updated.', 'related-posts-for-wp' ),
+		'8.0',
+		'6.8'
+	);
+	echo '</p></div>';
+}
+
+/**
+ * Ask admins to update premium 2.x, next to which this plugin stays dormant. Shown where plugins are updated.
+ *
+ * @return void
+ */
+function rp4wp_premium_update_notice() {
+	$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+	$update_screens = array( 'dashboard', 'plugins', 'update-core', 'dashboard-network', 'plugins-network', 'update-core-network' );
+
+	if ( ! current_user_can( 'update_plugins' ) || null === $screen || ! in_array( $screen->id, $update_screens, true ) ) {
+		return;
+	}
+
+	echo '<div class="notice notice-warning"><p>';
+	printf(
+		/* translators: 1: link opening tag, 2: link closing tag */
+		esc_html__( 'Related Posts for WordPress 3.0 works together with Related Posts for WordPress Premium 3.0. Please %1$supdate Premium%2$s. Until then, your current version of Premium keeps working on its own.', 'related-posts-for-wp' ),
+		'<a href="' . esc_url( self_admin_url( 'plugins.php' ) ) . '">',
+		'</a>'
+	);
+	echo '</p></div>';
+}
+
+/**
+ * Load Action Scheduler, which runs the installer in the background. It registers itself on plugins_loaded at priority
+ * 0, and the newest copy on the site (WooCommerce and others ship it too) is the one that runs. Loaded before that, and
+ * only when this plugin will run: its code needs a newer PHP than this file.
+ *
+ * @return void
+ */
+function rp4wp_load_action_scheduler() {
+	if ( ! rp4wp_meets_requirements() || defined( 'RP4WP_PLUGIN_FILE' ) ) {
+		return;
+	}
+
+	require_once __DIR__ . '/vendor/woocommerce/action-scheduler/action-scheduler.php';
+}
+
+/**
+ * Boot the plugin on plugins_loaded. Kept as a named callback, so it can still be unhooked with remove_action().
+ *
+ * @return void
+ */
+function rp4wp_load_plugin() {
+	if ( ! rp4wp_meets_requirements() ) {
+		add_action( 'admin_notices', 'rp4wp_requirements_notice' );
+
+		return;
+	}
+
+	// The premium plugin up to 2.x is a full copy of this plugin and boots first, defining this constant. Stay active but
+	// dormant next to it instead of deactivating like 2.x did, and ask to update it: premium 3.x builds on this plugin.
+	if ( defined( 'RP4WP_PLUGIN_FILE' ) ) {
+		add_action( 'admin_notices', 'rp4wp_premium_update_notice' );
+
+		return;
+	}
+
+	// The core finds its own files through RP4WP_FREE_PLUGIN_FILE. RP4WP_PLUGIN_FILE keeps its 2.x meaning: the main file of
+	// the premium plugin when that is active (premium 3.x defines RP4WP_PREMIUM_PLUGIN_FILE when WordPress includes it),
+	// and of this plugin otherwise.
+	define( 'RP4WP_FREE_PLUGIN_FILE', __FILE__ );
+	define( 'RP4WP_PLUGIN_FILE', defined( 'RP4WP_PREMIUM_PLUGIN_FILE' ) ? RP4WP_PREMIUM_PLUGIN_FILE : __FILE__ );
+
+	require __DIR__ . '/vendor/autoload.php';
+	\LV2\WordPress\RelatedPostsForWP\Compat\LegacyClassLoader::register();
+	require __DIR__ . '/deprecated/functions.php';
+	require __DIR__ . '/includes/template-tags.php';
+
+	// The database is brought up to date before the modules read it.
+	add_action( 'rp4wp_setup_database', array( 'LV2\\WordPress\\RelatedPostsForWP\\Database\\Migrations', 'on_setup' ), 10, 0 );
+
+	\LV2\WordPress\RelatedPostsForWP\Main::get()->setup();
+}
+
+add_action( 'plugins_loaded', 'rp4wp_load_action_scheduler', -10 );
 add_action( 'plugins_loaded', 'rp4wp_load_plugin', 20 );
 
-//
-if ( is_admin() && ! is_multisite() && ( false === defined( 'DOING_AJAX' ) || false === DOING_AJAX ) ) {
+// Stop the background installer when the plugin is deactivated, however that happens.
+require_once __DIR__ . '/includes/deactivation-functions.php';
+register_deactivation_hook( __FILE__, 'rp4wp_deactivate_plugin' );
 
-	// Load installer functions
-	require_once plugin_dir_path( __FILE__ ) . 'includes/installer-functions.php';
+// The activation hook is only registered on normal admin requests, like 2.x (see known issue K3).
+if ( is_admin() && ! is_multisite() && ! wp_doing_ajax() ) {
+	require_once __DIR__ . '/includes/installer-functions.php';
 
-	// Activation hook
 	register_activation_hook( __FILE__, 'rp4wp_activate_plugin' );
 }

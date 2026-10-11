@@ -6,4 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'LV2\\WordPress\\RelatedPostsForWP\\' => array($baseDir . '/src'),
 );

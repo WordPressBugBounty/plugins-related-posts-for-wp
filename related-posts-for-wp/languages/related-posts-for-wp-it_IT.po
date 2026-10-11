@@ -6,722 +6,786 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Related Posts for WordPress\n"
-"Report-Msgid-Bugs-To: https://github.com/barrykooij/related-posts-for-wp/issues\n"
-"POT-Creation-Date: 2017-09-06 17:17:09+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/related-posts-for-wp\n"
+"POT-Creation-Date: 2026-10-11T18:23:08+00:00\n"
 "PO-Revision-Date: 2017-09-06 17:20+0000\n"
 "Last-Translator: Barry Kooij <mail@barrykooij.nl>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/barrykooijplugins/related-posts-for-wordpress/language/it_IT/)\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it_IT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: grunt-wp-i18n1.0.0\n"
 
-#: classes/class-dependencies.php:27
-msgid "Error:"
-msgstr ""
-
-#: classes/class-is-installing-notice.php:74
-msgid ""
-"Woah! Looks like we weren't able to finish your Related Posts for WordPress "
-"installation wizard!"
-msgstr "Woah! Sembra che non siamo riusciti a completare l'installazione di Related Posts for WordPress!"
-
-#: classes/class-is-installing-notice.php:76
-msgid "%sResume the installation wizard%s or %sdismiss this notice%s"
-msgstr "%sRiprendi l'installazione%s o %snascondi questo avviso%s"
-
-#: classes/class-javascript-strings.php:14
-msgid "Are you sure you want to delete this related post?"
-msgstr "Sei sicuro di voler cancellare questo articolo correlato?"
-
-#: classes/class-javascript-strings.php:15
-msgid "Delete this post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:16
-msgid "Relink related posts"
-msgstr ""
-
-#: classes/class-javascript-strings.php:17
-msgid "Reinstall this post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:18
-msgid "Save post type"
-msgstr ""
-
-#: classes/class-javascript-strings.php:19
-msgid "Add post type"
-msgstr ""
-
-#: classes/class-link-related-table.php:45
-#: classes/hooks/class-hook-settings-page.php:20
-#: classes/meta-boxes/class-meta-box-manage.php:37
-#: classes/settings/class-settings-general.php:60
-msgid "Related Posts"
-msgstr "Articoli Correlati"
-
-#: classes/class-link-related-table.php:46
-msgid "All Posts"
-msgstr "Tutti gli Articoli"
-
-#: classes/class-link-related-table.php:95
-#: classes/settings/class-settings-weights.php:37
-msgid "Title"
-msgstr "Titolo"
-
-#: classes/class-link-related-table.php:96
-#: classes/hooks/class-hook-page-install.php:191
-#: classes/hooks/class-hook-settings-page.php:155
-msgid "Post Type"
-msgstr "Post Type"
-
-#: classes/class-link-related-table.php:97
-msgid "Post Date"
-msgstr ""
-
-#: classes/class-link-related-table.php:270
-msgid "Link Post"
-msgstr "Collega Articolo"
-
-#: classes/class-link-related-table.php:278
-msgid "View Post"
-msgstr "Vedi Articolo"
-
-#: classes/class-link-related-table.php:317
-msgid "Link Posts"
-msgstr "Collega Articoli"
-
-#: classes/class-post-type-manager.php:21
-#: classes/hooks/class-hook-link-related-screen.php:187
-msgid "Posts"
-msgstr "Articoli"
-
-#: classes/class-post-type-manager.php:22
-msgid "Pages"
-msgstr "Pagine"
-
-#: classes/class-related-posts-widget.php:13
+#. Plugin Name of the plugin
+#: related-posts-for-wp.php src/Frontend/Widget.php:28
 msgid "Related Posts for WordPress"
 msgstr "Related Posts for WordPress"
 
-#: classes/class-related-posts-widget.php:14
-msgid "Display related posts."
-msgstr "Mostra articoli correlati."
-
-#: classes/class-related-posts-widget.php:52
-msgid "Output template"
-msgstr ""
-
-#: classes/filters/class-filter-plugin-links.php:29
-msgid "Settings"
-msgstr "Impostazioni"
-
-#: classes/hooks/class-hook-link-related-screen.php:189
-msgid "Cancel linking"
-msgstr "Cancella collegamento"
-
-#: classes/hooks/class-hook-link-related-screen.php:205
-msgid "Search"
-msgstr "Cerca"
-
-#: classes/hooks/class-hook-page-install.php:59
-msgid "Welcome"
-msgstr "Benvenuto"
-
-#: classes/hooks/class-hook-page-install.php:60
-msgid "Caching Posts"
-msgstr "Cache Articoli"
-
-#: classes/hooks/class-hook-page-install.php:61
-msgid "Linking Posts"
-msgstr "Collegamento Articoli"
-
-#: classes/hooks/class-hook-page-install.php:62
-msgid "Finished"
-msgstr "Completato"
-
-#: classes/hooks/class-hook-page-install.php:73
-msgid ""
-"Missing post type parameter, please report this incident via %sour "
-"website%s."
-msgstr "Parametro post type mancance, per favore segnala questo problema tramite il %snostro sito%s."
-
-#: classes/hooks/class-hook-page-install.php:121
-msgid "Installation"
-msgstr "Installazione"
-
-#: classes/hooks/class-hook-page-install.php:172
-#: classes/hooks/class-hook-page-install.php:243
-msgid "Thank you for choosing Related Posts for WordPress!"
-msgstr "Grazie per aver scelto Related Posts for WordPress!"
-
-#: classes/hooks/class-hook-page-install.php:173
-msgid ""
-"Below you'll find your post types available for installation, by installing "
-"a post type we'll set up a cache and offer you the ability to automatic link"
-" (custom) posts. To install a post type, simply click the 'Install Post "
-"Type' button."
-msgstr "Qui sotto troverai i post type disponibili per l'installazione, installando un post type noi imposteremo una cache e ti daremo la possibilit&agrave; di collegare automaticamente articoli (custom). Per installare un post type, clicca semplicemente sul bottone 'Installa Post Type'."
-
-#: classes/hooks/class-hook-page-install.php:192
-msgid "Related to Post Types"
-msgstr "Correlato ai Post Type"
-
-#: classes/hooks/class-hook-page-install.php:227
-msgid "Edit this post type"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:244
-msgid ""
-"Before you can start using Related Posts for WordPress we need to cache your"
-" current posts."
-msgstr "Prima di poter utilizzare Related Posts for WordPress abbiamo bisogno di creare una cache dei tuo articoli attuali."
-
-#: classes/hooks/class-hook-page-install.php:245
-msgid ""
-"This is a one time process which might take some time now, depending on the "
-"amount of posts you have, but will ensure your website's performance when "
-"using the plugin."
-msgstr "Questo &egrave; un processo che viene eseguito una sola volta e potrebbero essere necessari alcuni minuti, in base al numero di articoli che hai, ma ti assicurer&agrave; migliori performance per il tuo sito durante l'utilizzo di questo plugin."
-
-#: classes/hooks/class-hook-page-install.php:247
-msgid ""
-"Do NOT close this window, wait for this process to finish and this wizard to"
-" take you to the next step."
-msgstr "NON chiudere questa finestra, attendi che il processo venga completato e che questo wizard ti porti allo step successivo."
-
-#: classes/hooks/class-hook-page-install.php:273
-msgid "Great! All your posts were successfully cached!"
-msgstr "Grandioso! La cache di tutti i tuoi articoli &egrave; stata creata correttamente!"
-
-#: classes/hooks/class-hook-page-install.php:274
-msgid ""
-"You can let me link your posts, based on what I think is related, to each "
-"other. And don't worry, if I made a mistake at one of your posts you can "
-"easily correct this by editing it manually!"
-msgstr "Puoi lasciarmi collegare i tuoi articoli, in base a coas io penso che sia correlato tra essi. E non preoccuparti, se faccio un errore in qualcuno di essi puoi sempre correggerlo facilmente modificando l'articolo manualmente!"
-
-#: classes/hooks/class-hook-page-install.php:275
-msgid ""
-"Want me to start linking posts to each other? Fill in the amount of related "
-"posts each post should have and click on the \"Link now\" button. Rather "
-"link your posts manually? Click \"Skip linking\"."
-msgstr "Vuoi che inizia a collegare gli articoli tra essi? Inserisci il numero ti articoli correlati che ogni articolo dovrebbe avere e clicca sul bottone \"Collega ora\". Vuoi farlo manualmente? Clicca su \"Salta collegamento\"."
-
-#: classes/hooks/class-hook-page-install.php:276
-msgid ""
-"Do NOT close this window if you click the \"Link now\" button, wait for this"
-" process to finish and this wizard to take you to the next step."
-msgstr "NON chiudere questa finestra se clicchi sul bottone \"Collega ora\", attendi che questo processo finisca e che il wizard ti porti allo step successivo."
-
-#: classes/hooks/class-hook-page-install.php:283
-msgid "Amount of related posts:"
-msgstr "Numero di articoli correlati:"
-
-#: classes/hooks/class-hook-page-install.php:287
-msgid "The amount of related items per %s"
-msgstr "Il numero di elementi correlati per %s"
-
-#: classes/hooks/class-hook-page-install.php:293
-msgid "Maximum Post Age:"
-msgstr "Et&agrave; massima dell'articolo:"
-
-#: classes/hooks/class-hook-page-install.php:297
-msgid "The maximum age in days of %s that will be linked. (0 = unlimited)"
-msgstr ""
-
-#: classes/hooks/class-hook-page-install.php:304
-msgid "Link now"
-msgstr "Collega ora"
-
-#: classes/hooks/class-hook-page-install.php:306
-msgid "Skip linking"
-msgstr "Salta collegamento"
-
-#: classes/hooks/class-hook-page-install.php:324
-msgid "That's it, you're good to go!"
-msgstr "Ecco fatto, sei pronto!"
-
-#: classes/hooks/class-hook-page-install.php:325
-msgid ""
-"Thanks again for using Related Posts for WordPress and if you have any "
-"questions be sure to ask them at the %sWordPress.org forums.%s"
-msgstr "Grazie ancora per aver utilizzato Related Posts for WordPress e se hai domande assicurati di chiederlo sui %sforum di WordPress.org.%s"
-
-#: classes/hooks/class-hook-page-install.php:328
-msgid "Click here to return to step 1"
-msgstr "Clicca qui per tornare allo step 1"
-
-#: classes/hooks/class-hook-page-install.php:334
-msgid "Click here to go to the settings page"
-msgstr "Clicca qui per andare alla pagina delle impostazioni"
-
-#: classes/hooks/class-hook-settings-page.php:58
-msgid "Plugin version"
-msgstr "Versione plugin"
-
-#: classes/hooks/class-hook-settings-page.php:64
-msgid ""
-"Got a question? Simply send us an email at "
-"%ssupport@relatedpostsforwp.com%s. Please note that support requires an "
-"active license."
-msgstr "Hai una domanda? Invia semplicemente un'email a %ssupport@relatedpostsforwp.com%s. Per favore nota che per avere supporto hai bisogno di una licenza attiva."
-
-#: classes/hooks/class-hook-settings-page.php:68
-msgid "More information"
-msgstr "Pi&ugrave; informazioni"
-
-#: classes/hooks/class-hook-settings-page.php:70
-msgid "<a href='%s'>Documentation</a>"
-msgstr "<a href='%s'>Documentazione</a>"
-
-#: classes/hooks/class-hook-settings-page.php:72
-msgid "<a href='%s'>Changelog</a>"
-msgstr "<a href='%s'>Changelog</a>"
-
-#: classes/hooks/class-hook-settings-page.php:74
-msgid "<a href='%s'>Give us a review</a>"
-msgstr "<a href='%s'>Inviaci una recensione</a>"
-
-#: classes/hooks/class-hook-settings-page.php:76
-msgid "Check out our other plugins at Never5.com"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:81
-msgid "About Never5"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:85
-msgid ""
-"At %sNever5%s we create high quality premium WordPress plugins, with "
-"extensive support. We offer solutions in related posts, advanced download "
-"management, vehicle management and connecting post types."
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:87
-msgid "%sFollow Never5 on Twitter%s"
-msgstr ""
-
-#: classes/hooks/class-hook-settings-page.php:113
-msgid "General"
-msgstr "Generale"
-
-#: classes/hooks/class-hook-settings-page.php:133
-msgid "Installer"
-msgstr "Installer"
-
-#: classes/meta-boxes/class-meta-box-manage.php:80
-msgid "Add Related Posts"
-msgstr "Aggiungi Articoli Correlati"
-
-#: classes/meta-boxes/class-meta-box-manage.php:108
-#: classes/meta-boxes/class-meta-box-manage.php:109
-msgid "Edit Post"
-msgstr "Modifica Articolo"
-
-#: classes/meta-boxes/class-meta-box-manage.php:111
-#: classes/meta-boxes/class-meta-box-manage.php:112
-msgid "Unlink Related Post"
-msgstr "Scollega Articolo Correlato"
-
-#: classes/meta-boxes/class-meta-box-manage.php:125
-msgid "No related posts found."
-msgstr "Nessun articolo correlato trovato."
-
-#: classes/meta-boxes/class-meta-box-options.php:37
-msgid "Related Posts Options"
-msgstr "Opzioni Articoli Correlati"
-
-#: classes/meta-boxes/class-meta-box-options.php:62
-msgid "Exclude"
-msgstr "Escludi"
-
-#: classes/settings/class-settings-categories.php:18
-#: classes/settings/class-settings-weights.php:51
-msgid "Categories"
-msgstr "Categorie"
-
-#: classes/settings/class-settings-categories.php:27
-msgid "Limit Post Categories"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:28
-msgid "Limit the categories related content is selected from."
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:34
-msgid "Select Categories"
-msgstr ""
-
-#: classes/settings/class-settings-categories.php:35
-msgid "Select what categories we need to select related content from."
-msgstr ""
-
-#: classes/settings/class-settings-configurator.php:18
-msgid "Styling"
-msgstr "Stile"
-
-#: classes/settings/class-settings-configurator.php:24
-msgid "Full control on how your related posts are displayed."
-msgstr "Controllo completo su come i tuoi articoli correlati vengono mostrati."
-
-#: classes/settings/class-settings-configurator.php:33
-msgid "Posts per row"
-msgstr "Articoli per riga"
-
-#: classes/settings/class-settings-configurator.php:34
-msgid "The amount of related posts per row."
-msgstr "Il  numero di articoli correlati per riga."
-
-#: classes/settings/class-settings-configurator.php:46
-msgid "Row fixed height"
-msgstr "Altezza fissa riga"
-
-#: classes/settings/class-settings-configurator.php:47
-msgid ""
-"The fixed height per row in pixels, set to 0 to allow dynamic heights.."
-msgstr "L'altezzza fissa in pixel per riga, impostala a 0 per permettere le altezze dinamiche.."
-
-#: classes/settings/class-settings-configurator.php:53
-msgid "Custom CSS"
-msgstr "CSS Personalizzato"
-
-#: classes/settings/class-settings-configurator.php:54
-msgid ""
-"Add custom CSS to selected theme. Warning! This is an advanced feature! An "
-"error here will break frontend display. To disable, leave field empty."
-msgstr "Aggiungi CSS personalizzato al tema selezionato. Attenzione! Questa &egrave; una funzionalit&agrave; avanzata! Un errore qui causer&agrave; malfunzionamenti nel frontend. Per disabilitarlo, lascia vuoto il campo."
-
-#: classes/settings/class-settings-general.php:18
-msgid "General settings for %s"
-msgstr "Impostazioni generali per %s"
-
-#: classes/settings/class-settings-general.php:24
-msgid "Automatic %ss linking"
-msgstr "Collegamento automatico di %ss"
-
-#: classes/settings/class-settings-general.php:25
-msgid ""
-"The following options affect how related posts are automatically linked for "
-"%ss."
-msgstr "Le opzioni seguenti specificano come vengono collegati automaticamente gli articoli correlati per %ss."
-
-#: classes/settings/class-settings-general.php:29
-msgid "Enable"
-msgstr "Abilita"
-
-#: classes/settings/class-settings-general.php:30
-msgid "Checking this will enable automatically linking posts to new %ss"
-msgstr "Selezionando questa opzione verr&agrave; abilitato il collegamento automatico degli articoli ai nuovi %ss."
-
-#: classes/settings/class-settings-general.php:36
-msgid "Amount of Posts"
-msgstr "Numero di Articoli"
-
-#: classes/settings/class-settings-general.php:37
-msgid "The amount of automatically linked %ss"
-msgstr "Il numero di %ss collegati automaticamente"
-
-#: classes/settings/class-settings-general.php:43
-msgid "Maximum Post Age"
-msgstr "Et&agrave; massima dell'articolo"
-
-#: classes/settings/class-settings-general.php:44
-msgid "The maximum age in days of %ss that will be linked. (0 = unlimited)"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:52
-msgid "Frontend Settings"
-msgstr "Impostazioni Frontend"
-
-#: classes/settings/class-settings-general.php:53
-msgid ""
-"The following options affect how related %ss are displayed on the frontend."
-msgstr "Le seguenti opzioni specificano come vengono mostrati gli %ss correlati nel frontend."
-
-#: classes/settings/class-settings-general.php:57
-msgid "Heading text"
-msgstr "Testo intestazione"
-
-#: classes/settings/class-settings-general.php:58
-msgid ""
-"The text that is displayed above the related %ss. To disable, leave field "
-"empty."
-msgstr "Il testo che viene mostrato sopra gli %ss correlati. Per disabilitarlo, lascia vuoto il campo."
-
-#: classes/settings/class-settings-general.php:64
-msgid "Excerpt length"
-msgstr "Lunghezza estratto"
-
-#: classes/settings/class-settings-general.php:65
-msgid ""
-"The amount of words to be displayed below the title on website. To disable, "
-"set value to 0."
-msgstr "Il numero di parole da mostrare sotto il titolo del sito. Per disabilitarlo, imposta il valore a 0."
-
-#: classes/settings/class-settings-general.php:73
-msgid "Thumbnail size"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:74
-msgid ""
-"These settings affect the display and dimensions of your related post "
-"thumbnails – the display on the front-end will still be affected by CSS "
-"styles. After changing these settings you may need to %sregenerate your "
-"thumbnails.%s"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:78
-msgid "Width"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:79
-msgid "Thumbnail's width in pixels."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:85
-msgid "Height"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:86
-msgid "Thumbnail's height in pixels."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:92
-msgid "Crop"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:93
-msgid "Crop the image from the center."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:101
-msgid "Thumbnail Placeholder"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:102
-msgid ""
-"The placeholder will be used if no featured image is set and no images could"
-" be found in the content."
-msgstr ""
-
-#: classes/settings/class-settings-general.php:106
-msgid "Placeholder"
-msgstr ""
-
-#: classes/settings/class-settings-general.php:107
-msgid ""
-"Thumbnail placeholder, the image that will be used if no other image is "
-"found."
-msgstr ""
-
-#: classes/settings/class-settings-license.php:18
-msgid "License"
-msgstr "Licenza"
-
-#: classes/settings/class-settings-license.php:29
-msgid "License Status"
-msgstr "Stato Licenza"
-
-#: classes/settings/class-settings-license.php:36
-msgid "License Key"
-msgstr "Chiave Licenza"
-
-#: classes/settings/class-settings-license.php:37
-msgid ""
-"Your license key. You can find your license key in your %sMy Account%s page."
-msgstr "La tua chiave di licenza. Puoi trovare la tua chiave di licenza nella tua pagina %sMy Account%s."
-
-#: classes/settings/class-settings-license.php:44
-msgid "Activation Email"
-msgstr "Email di Attivazione"
-
-#: classes/settings/class-settings-license.php:45
-msgid ""
-"Your activation email address. You can find your activation email address in"
-" your %sMy Account%s page."
-msgstr "Il tuo indirizzo email di attivazione. Puoi trovare il tuo indirizzo email di attivazione nella tua pagina %sMy Account%s."
-
-#: classes/settings/class-settings-misc.php:18
-msgid "Misc"
-msgstr "Varie"
-
-#: classes/settings/class-settings-misc.php:24
-msgid "Miscellaneous Settings"
-msgstr "Impostazioni Varie"
-
-#: classes/settings/class-settings-misc.php:25
-msgid "A shelter for options that just don't fit in."
-msgstr "Un rifugio per le impostazioni che non hanno nessun altro posto."
-
-#: classes/settings/class-settings-misc.php:29
-msgid "Remove Data on Uninstall?"
-msgstr "Rimuovi Dati e Disinstalla?"
-
-#: classes/settings/class-settings-misc.php:30
-msgid ""
-"Check this box if you would like to completely remove all of its data when "
-"the plugin is deleted."
-msgstr "Seleziona questa opzione se vuoi rimuovere completamente tutti i dati del plugin quando viene cancellato."
-
-#: classes/settings/class-settings-misc.php:36
-msgid "Show love?"
-msgstr "Mostrare amore?"
-
-#: classes/settings/class-settings-misc.php:37
-msgid ""
-"Display a 'Powered by' line under your related posts. <strong>BEWARE! Only "
-"for the real fans.</strong>"
-msgstr "Mostra una riga 'Powered by' sotto i tuoi articoli correlati. <strong>ATTENZIONE! Solo per veri fan.</strong>"
-
-#: classes/settings/class-settings-misc.php:43
-msgid "Disable SSL Verification"
-msgstr "Disabilita Verifica SSL"
-
-#: classes/settings/class-settings-misc.php:44
-msgid ""
-"Disable SSL verification in license requests. Check this if you've got "
-"problems connecting to licensing server."
-msgstr "Disabilita la verifica SSL nelle richieste per la licenza. Seleziona questa opzione solo se stai avendo problemi di connessione con il server per il controllo della licenza."
-
-#: classes/settings/class-settings-page.php:212
-msgid "Image URL"
-msgstr ""
-
-#: classes/settings/class-settings-page.php:213
-msgid "Upload Image"
-msgstr ""
-
-#: classes/settings/class-settings-page.php:471
-msgid "ACTIVATED"
-msgstr "ATTIVATO"
-
-#: classes/settings/class-settings-page.php:473
-msgid "NOT ACTIVE"
-msgstr "NON ATTIVO"
-
-#: classes/settings/class-settings-weights.php:18
-msgid "Weights"
-msgstr "Peso"
-
-#: classes/settings/class-settings-weights.php:24
-msgid "Weight settings"
-msgstr "Impostazioni di peso"
-
-#: classes/settings/class-settings-weights.php:25
-msgid ""
-"Easily adjust the weights by using the sliders below. Please note that you "
-"need to rerun the installer after changing weights."
-msgstr "Aggiusta facilmente i pesi utilizzando gli slider qui sotto. Per favore nota che devi rilanciare l'installazone dopo aver cambiato i pesi."
-
-#: classes/settings/class-settings-weights.php:29
-#: classes/settings/class-settings-weights.php:33
-msgid "Reset Weight"
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:30
-msgid ""
-"Reset the weights back to their defaults. Don't forget to Save the Changes "
-"after resetting the weights."
-msgstr ""
-
-#: classes/settings/class-settings-weights.php:38
-msgid "The weight of the title."
-msgstr "Il peso del titolo."
-
-#: classes/settings/class-settings-weights.php:44
-msgid "Links"
-msgstr "Collegamenti"
-
-#: classes/settings/class-settings-weights.php:45
-msgid "The weight of the links found in the content."
-msgstr "Il peso dei collegamenti trovati nel contenuto."
-
-#: classes/settings/class-settings-weights.php:52
-msgid "The weight of the categories."
-msgstr "Il peso delle categorie."
-
-#: classes/settings/class-settings-weights.php:58
-msgid "Tags"
-msgstr "Tag"
-
-#: classes/settings/class-settings-weights.php:59
-msgid "The weight of the tags."
-msgstr "Il peso dei tag."
-
-#: classes/settings/class-settings-weights.php:65
-msgid "Custom Taxonomies"
-msgstr "Tassonomie Personalizzate"
-
-#: classes/settings/class-settings-weights.php:66
-msgid "The weight of custom taxonomies."
-msgstr "Il peso delle tassonomie personalizzate."
-
-#: classes/settings/class-settings-words.php:18
-msgid "Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:24
-msgid "Word related options"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:25
-msgid ""
-"Control what extra words should be excluded and what word combinations "
-"should be parsed as a single word."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:29
-msgid "Extra Ignored Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:30
-msgid ""
-"By default we already ignore a lot of words based on your language that are "
-"not related to your content. In English this would be words like %s and %s."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:30
-msgid "Add the extra words you would to ignore here, one word per row."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:36
-msgid "Joined Words"
-msgstr ""
-
-#: classes/settings/class-settings-words.php:37
-msgid ""
-"By default we split content per word but some word combinations should be "
-"considered as one word. An example of this would be %s."
-msgstr ""
-
-#: classes/settings/class-settings-words.php:37
-msgid "Add your joined words here, one joined word per row."
-msgstr ""
-
-#: includes/updater/class-rp4wp-updater.php:131
-msgid "Hide notice"
-msgstr "Nascondi avviso"
-
-#. Plugin Name of the plugin/theme
-msgid "Related Posts for WordPress Premium"
-msgstr "Related Posts for WordPress Premium"
-
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
+#: related-posts-for-wp.php
 msgid "http://www.relatedpostsforwp.com/"
 msgstr "http://www.relatedpostsforwp.com/"
 
-#. Description of the plugin/theme
-msgid "The best way to display related posts in WordPress."
-msgstr "Il miglior modo per mostrare articoli correlati in WordPress."
+#. Description of the plugin
+#: related-posts-for-wp.php
+msgid "Related Posts for WordPress, the best way to display related posts in WordPress."
+msgstr "Related Posts for WordPress, il modo migliore per mostrare articoli correlati in WordPress."
 
-#. Author of the plugin/theme
+#. Author of the plugin
+#: related-posts-for-wp.php
 msgid "Never5"
-msgstr ""
+msgstr "Never5"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
+#: related-posts-for-wp.php
 msgid "http://www.never5.com/"
+msgstr "http://www.never5.com/"
+
+#. translators: 1: required PHP version, 2: required WordPress version
+#: related-posts-for-wp.php:66
+msgid "Related Posts for WordPress needs PHP %1$s and WordPress %2$s or newer. It does not run on this site until they are updated."
+msgstr "Related Posts for WordPress richiede PHP %1$s e WordPress %2$s o versioni successive. Il plugin non funzionerà su questo sito finché non saranno aggiornati."
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: related-posts-for-wp.php:89
+msgid "Related Posts for WordPress 3.0 works together with Related Posts for WordPress Premium 3.0. Please %1$supdate Premium%2$s. Until then, your current version of Premium keeps working on its own."
+msgstr "Related Posts for WordPress 3.0 funziona insieme a Related Posts for WordPress Premium 3.0. %1$sAggiorna Premium%2$s. Nel frattempo, la versione attuale di Premium continua a funzionare in modo autonomo."
+
+#: src/Admin/App/Assets.php:106
+msgid "The settings screen of Related Posts for WordPress is missing its scripts. Run npm run build in the plugin folder."
+msgstr "Mancano gli script della schermata delle impostazioni di Related Posts for WordPress. Esegui npm run build nella cartella del plugin."
+
+#: src/Admin/Assets.php:52
+msgid "Are you sure you want to delete this related post?"
+msgstr "Sei sicuro di voler cancellare questo articolo correlato?"
+
+#: src/Admin/LinkScreen/ListTable.php:63 src/Admin/MetaBox/ManageLinks.php:53
+#: src/Admin/Wizard/Page.php:77 src/Settings/Settings.php:231
+msgid "Related Posts"
+msgstr "Articoli Correlati"
+
+#: src/Admin/LinkScreen/ListTable.php:64
+msgid "All Posts"
+msgstr "Tutti gli Articoli"
+
+#: src/Admin/LinkScreen/ListTable.php:118
+msgid "Title"
+msgstr "Titolo"
+
+#: src/Admin/LinkScreen/ListTable.php:119
+msgid "Post Date"
+msgstr "Data dell'articolo"
+
+#: src/Admin/LinkScreen/ListTable.php:301
+msgid "Link Post"
+msgstr "Collega Articolo"
+
+#: src/Admin/LinkScreen/ListTable.php:334
+msgid "Link Posts"
+msgstr "Collega Articoli"
+
+#: src/Admin/LinkScreen/Page.php:126
+msgid "Posts"
+msgstr "Articoli"
+
+#: src/Admin/LinkScreen/Page.php:127
+msgid "Cancel linking"
+msgstr "Annulla collegamento"
+
+#: src/Admin/LinkScreen/Page.php:136
+msgid "Search"
+msgstr "Cerca"
+
+#: src/Admin/LinkScreen/Page.php:245 src/Admin/MetaBox/Ajax.php:113
+msgid "Related Posts for WordPress is moving its links to a new database table. Please try again in a moment."
+msgstr "Related Posts for WordPress sta spostando i suoi collegamenti in una nuova tabella del database. Riprova tra un momento."
+
+#: src/Admin/MetaBox/ManageLinks.php:81
+msgid "Add Related Posts"
+msgstr "Aggiungi Articoli Correlati"
+
+#: src/Admin/MetaBox/ManageLinks.php:100 src/Admin/MetaBox/ManageLinks.php:101
+msgid "Edit Post"
+msgstr "Modifica Articolo"
+
+#: src/Admin/MetaBox/ManageLinks.php:103 src/Admin/MetaBox/ManageLinks.php:104
+msgid "Unlink Related Post"
+msgstr "Scollega Articolo Correlato"
+
+#: src/Admin/MetaBox/ManageLinks.php:115
+msgid "No related posts found."
+msgstr "Nessun articolo correlato trovato."
+
+#. translators: %d: how far the installation is, in percent
+#: src/Admin/Notices/Installing.php:75
+msgid "Related Posts for WordPress is linking your posts in the background (%d%%)."
+msgstr "Related Posts for WordPress sta collegando i tuoi articoli in background (%d%%)."
+
+#: src/Admin/Notices/Installing.php:78 src/Install/Update.php:190
+msgid "View progress"
+msgstr "Visualizza l'avanzamento"
+
+#: src/Admin/Notices/Installing.php:88
+msgid "The installation of Related Posts for WordPress stopped with an error."
+msgstr "L'installazione di Related Posts for WordPress si è interrotta a causa di un errore."
+
+#: src/Admin/Notices/Installing.php:89
+msgid "See what happened"
+msgstr "Scopri cosa è successo"
+
+#: src/Admin/Notices/Installing.php:100
+msgid "Woah! Looks like we weren't able to finish your Related Posts for WordPress installation wizard!"
+msgstr "Woah! Sembra che non siamo riusciti a completare l'installazione di Related Posts for WordPress!"
+
+#: src/Admin/Notices/Installing.php:101
+msgid "Finish the installation"
+msgstr "Completa l'installazione"
+
+#: src/Admin/Notices/Installing.php:150 src/Install/Update.php:213
+msgid "Dismiss"
+msgstr "Ignora"
+
+#: src/Admin/Notices/Mbstring.php:37
+msgid "Error:"
+msgstr "Errore:"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:40
+msgid "The %s extension needs to be installed and activated for Related Posts for WP to work!"
+msgstr "L'estensione %s deve essere installata e attivata perché Related Posts for WP possa funzionare!"
+
+#. translators: %s: the name of the PHP extension
+#: src/Admin/Notices/Mbstring.php:46
+msgid "Please contact your host and ask them to install the %s PHP extension."
+msgstr "Contatta il tuo provider di hosting e chiedi di installare l'estensione PHP %s."
+
+#: src/Admin/Notices/Multisite.php:32
+msgid "The free version of Related Posts for WordPress doesn't support WordPress Multisite/Network!"
+msgstr "La versione gratuita di Related Posts for WordPress non supporta WordPress Multisite (rete)!"
+
+#. translators: 1: link opening tag, 2: link closing tag
+#: src/Admin/Notices/Multisite.php:36
+msgid "%1$sUpgrade to the premium version%2$s or disable the plugin."
+msgstr "%1$sPassa alla versione Premium%2$s oppure disattiva il plugin."
+
+#: src/Admin/Notices/Playground.php:40
+msgid ""
+"We noticed you're running the plugin in the WordPress playground.\n"
+"                    Our plugin currently doesn't work there, due to limitation on the side of the WP playground."
 msgstr ""
+"Abbiamo notato che stai usando il plugin in WordPress Playground.\n"
+"                    Al momento il nostro plugin non funziona lì, a causa di una limitazione di WP Playground."
+
+#: src/Admin/Notices/Playground.php:47
+msgid "Related Posts for WP is not available inside the WordPress Playground!"
+msgstr "Related Posts for WP non è disponibile in WordPress Playground!"
+
+#: src/Admin/Notices/Playground.php:49
+msgid "For more information regarding our plugin:"
+msgstr "Per maggiori informazioni sul nostro plugin:"
+
+#: src/Admin/Notices/Playground.php:51
+msgid "View the tour on relatedpostsforwp.com"
+msgstr "Guarda il tour su relatedpostsforwp.com"
+
+#. translators: 1: bold opening tag, 2: bold closing tag
+#: src/Admin/Notices/Review.php:59
+msgid "You've been using %sRelated Posts for WordPress%s for some time now, could you please give it a review at wordpress.org?"
+msgstr "Usi %sRelated Posts for WordPress%s già da un po' di tempo: ti andrebbe di lasciare una recensione su wordpress.org?"
+
+#. translators: 1: review link opening tag, 2: link closing tag, 3: dismiss link opening tag, 4: link closing tag
+#: src/Admin/Notices/Review.php:66
+msgid "%sYes, take me there!%s - %sI've already done this!%s"
+msgstr "%sSì, portami lì!%s - %sL'ho già fatto!%s"
+
+#: src/Admin/PluginLinks.php:38
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: src/Admin/PluginLinks.php:39 assets/build/admin/index.js:25
+msgid "Upgrade to Premium"
+msgstr "Passa a Premium"
+
+#. translators: The title of the settings page: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:54 src/Admin/Wizard/Page.php:76
+#: assets/build/admin/index.js:25
+msgctxt "page title"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#. translators: The label of the settings page in the Settings menu: the name of the plugin, best left as it is.
+#: src/Admin/Settings/Page.php:56
+msgctxt "menu label"
+msgid "Related Posts"
+msgstr "Related Posts"
+
+#: src/Admin/Settings/Page.php:83
+msgid "The settings of Related Posts for WordPress need JavaScript."
+msgstr "Le impostazioni di Related Posts for WordPress richiedono JavaScript."
+
+#: src/Admin/Wizard/Page.php:134
+msgid "Go to the settings of Related Posts for WordPress"
+msgstr "Vai alle impostazioni di Related Posts for WordPress"
+
+#: src/Database/Migrations.php:222
+msgid "Related Posts for WordPress could not update its database tables. It keeps working with the data it has, and tries again every ten minutes."
+msgstr "Related Posts for WordPress non è riuscito ad aggiornare le sue tabelle del database. Continua a funzionare con i dati che ha e riprova ogni dieci minuti."
+
+#: src/Database/Migrations.php:224
+msgid "Try again"
+msgstr "Riprova"
+
+#: src/Database/Migrations.php:239 src/Install/Update.php:228
+#: src/Install/Update.php:249
+msgid "Sorry, you are not allowed to do that."
+msgstr "Non hai i permessi per farlo."
+
+#: src/Frontend/Widget.php:29
+msgid "Display related posts."
+msgstr "Mostra articoli correlati."
+
+#: src/Install/Jobs/Queue.php:107
+msgid "An installation is running already."
+msgstr "Un'installazione è già in corso."
+
+#: src/Install/Jobs/Queue.php:159
+msgid "There is no stopped installation to resume."
+msgstr "Non c'è nessuna installazione interrotta da riprendere."
+
+#: src/Install/Jobs/Queue.php:333
+msgid "The steps of the installation changed while it ran. Please start it again."
+msgstr "I passaggi dell'installazione sono cambiati mentre era in corso. Avviala di nuovo."
+
+#: src/Install/Planner.php:40
+msgid "The number of related posts to link to each post."
+msgstr "Il numero di articoli correlati da collegare a ogni articolo."
+
+#: src/Install/Planner.php:47
+msgid "Only cache the words of the posts, and link nothing."
+msgstr "Memorizza nella cache solo le parole degli articoli, senza collegare nulla."
+
+#: src/Install/Planner.php:52
+msgid "Remove every link and all cached words first, and install again."
+msgstr "Rimuovi prima tutti i collegamenti e tutte le parole nella cache, poi installa di nuovo."
+
+#: src/Install/Tasks/CacheWordsTask.php:49
+msgid "Caching posts"
+msgstr "Memorizzazione degli articoli nella cache"
+
+#: src/Install/Tasks/LinkPostsTask.php:68
+msgid "Linking posts"
+msgstr "Collegamento degli articoli"
+
+#: src/Install/Tasks/ReindexWordsTask.php:62
+msgid "Reading your posts again"
+msgstr "Nuova lettura dei tuoi articoli"
+
+#: src/Install/Tasks/RelinkPostsTask.php:62
+msgid "Linking your posts again"
+msgstr "Nuovo collegamento dei tuoi articoli"
+
+#: src/Install/Tasks/ResetTask.php:37
+msgid "Removing the old links and words"
+msgstr "Rimozione dei vecchi collegamenti e delle vecchie parole"
+
+#: src/Install/Tasks/SaveAmountTask.php:54
+msgid "Saving the settings"
+msgstr "Salvataggio delle impostazioni"
+
+#: src/Install/Tasks/WeighWordsTask.php:69
+msgid "Weighing the words"
+msgstr "Ponderazione delle parole"
+
+#: src/Install/Update.php:138
+msgid "Updating your related posts"
+msgstr "Aggiornamento dei tuoi articoli correlati alla 3.0"
+
+#: src/Install/Update.php:139
+msgid "Your related posts are up to date."
+msgstr "I tuoi articoli correlati sono aggiornati."
+
+#: src/Install/Update.php:140
+msgid "The update of your related posts stopped"
+msgstr "L'aggiornamento dei tuoi articoli correlati alla 3.0 si è interrotto"
+
+#: src/Install/Update.php:141
+msgid "The update of your related posts was cancelled"
+msgstr "L'aggiornamento dei tuoi articoli correlati alla 3.0 è stato annullato"
+
+#: src/Install/Update.php:142
+msgid "Cancel the update of your related posts? Posts it did not reach keep their old related posts."
+msgstr "Annullare l'aggiornamento dei tuoi articoli correlati alla 3.0? Gli articoli che non ha ancora raggiunto mantengono i loro vecchi articoli correlati."
+
+#: src/Install/Update.php:143
+msgid "Cancel update"
+msgstr "Annulla l'aggiornamento alla 3.0"
+
+#. translators: %d: how far the update is, in percent
+#: src/Install/Update.php:187
+msgid "Related Posts for WordPress is updating your related posts in the background (%d%%). Every post keeps its related posts until it gets its new ones."
+msgstr "Related Posts for WordPress sta aggiornando i tuoi articoli correlati alla 3.0 in background (%d%%). Ogni articolo mantiene i suoi articoli correlati finché non riceve quelli nuovi."
+
+#: src/Install/Update.php:200
+msgid "The update of your related posts stopped. Posts it did not reach keep their old related posts until you resume it."
+msgstr "L'aggiornamento dei tuoi articoli correlati alla 3.0 si è interrotto. Gli articoli che non ha ancora raggiunto mantengono i loro vecchi articoli correlati finché non lo riprendi."
+
+#: src/Install/Update.php:201 assets/build/admin/index.js:16
+msgid "Resume"
+msgstr "Riprendi"
+
+#: src/Install/Update.php:210
+msgid "Your related posts are up to date. Related Posts for WordPress 3.0 finds related posts in a new, more precise way, and linked your posts again; the related posts you added by hand kept their place."
+msgstr "I tuoi articoli correlati sono aggiornati. Related Posts for WordPress 3.0 trova gli articoli correlati in un modo nuovo e più preciso e ha collegato di nuovo i tuoi articoli; gli articoli correlati che hai aggiunto a mano hanno mantenuto il loro posto."
+
+#: src/Install/Update.php:212
+msgid "What changed"
+msgstr "Cosa è cambiato"
+
+#: src/Rest/InstallController.php:126
+msgid "No installation is running."
+msgstr "Nessuna installazione in corso."
+
+#: src/Rest/SettingsController.php:49
+msgid "The values to save, by field ID. Fields that are left out keep their value."
+msgstr "I valori da salvare, per ID del campo. I campi omessi mantengono il loro valore."
+
+#. translators: %s: a settings page ID
+#: src/Settings/Schema/Pages.php:164
+msgid "There is no settings page \"%s\"."
+msgstr "Non esiste una pagina di impostazioni \"%s\"."
+
+#: src/Settings/Settings.php:206
+msgid "General"
+msgstr "Generale"
+
+#: src/Settings/Settings.php:207
+msgid "The following options affect the general behaviour of the plugin."
+msgstr "Le seguenti opzioni influiscono sul comportamento generale del plugin."
+
+#: src/Settings/Settings.php:211
+msgid "Enable"
+msgstr "Abilita"
+
+#: src/Settings/Settings.php:212
+msgid "Checking this will enable automatically linking posts to new posts"
+msgstr "Selezionando questa opzione, i nuovi articoli verranno collegati automaticamente agli articoli correlati"
+
+#: src/Settings/Settings.php:218
+msgid "Amount of Posts"
+msgstr "Numero di Articoli"
+
+#: src/Settings/Settings.php:219
+msgid "The amount of automatically linked post"
+msgstr "Il numero di articoli collegati automaticamente"
+
+#: src/Settings/Settings.php:228
+msgid "Heading text"
+msgstr "Testo intestazione"
+
+#: src/Settings/Settings.php:229
+msgid "The text that is displayed above the related posts. To disable, leave field empty."
+msgstr "Il testo mostrato sopra gli articoli correlati. Per disattivarlo, lascia vuoto il campo."
+
+#: src/Settings/Settings.php:235
+msgid "Excerpt length"
+msgstr "Lunghezza estratto"
+
+#: src/Settings/Settings.php:236
+msgid "The amount of words to be displayed below the title on website. To disable, set value to 0."
+msgstr "Il numero di parole da mostrare sotto il titolo sul sito. Per disattivarlo, imposta il valore a 0."
+
+#: src/Settings/Settings.php:246
+msgid "Styling"
+msgstr "Stile"
+
+#: src/Settings/Settings.php:247
+msgid "The following options affect how related posts are displayed on the frontend."
+msgstr "Le seguenti opzioni influiscono su come vengono mostrati gli articoli correlati sul sito."
+
+#: src/Settings/Settings.php:251
+msgid "Display Image"
+msgstr "Mostra immagine"
+
+#: src/Settings/Settings.php:252
+msgid "Checking this will enable displaying featured images of related posts."
+msgstr "Selezionando questa opzione verranno mostrate le immagini in evidenza degli articoli correlati."
+
+#: src/Settings/Settings.php:258
+msgid "CSS"
+msgstr "CSS"
+
+#: src/Settings/Settings.php:259
+msgid "Warning! This is an advanced feature! An error here will break frontend display. To disable, leave field empty."
+msgstr "Attenzione! Questa è una funzionalità avanzata! Un errore qui comprometterà la visualizzazione sul sito. Per disattivarla, lascia vuoto il campo."
+
+#. translators: 1: the custom property for the space between posts, 2: the custom property for the image width
+#: src/Settings/Settings.php:261
+msgid "To change only the space between posts or the image width, set %1$s or %2$s in your theme instead."
+msgstr "Per modificare solo lo spazio tra gli articoli o la larghezza dell’immagine, imposta invece %1$s o %2$s nel tuo tema."
+
+#: src/Settings/Settings.php:273
+msgid "Misc"
+msgstr "Varie"
+
+#: src/Settings/Settings.php:274
+msgid "A shelter for options that just don't fit in anywhere else."
+msgstr "Un rifugio per le opzioni che non trovano posto altrove."
+
+#: src/Settings/Settings.php:278
+msgid "Remove Data on Uninstall?"
+msgstr "Rimuovere i dati alla disinstallazione?"
+
+#: src/Settings/Settings.php:279
+msgid "Check this box if you would like to completely remove all of its data when the plugin is deleted."
+msgstr "Seleziona questa opzione se vuoi rimuovere completamente tutti i dati del plugin quando viene cancellato."
+
+#: src/Settings/Settings.php:285
+msgid "Show love?"
+msgstr "Mostrare amore?"
+
+#: src/Settings/Settings.php:286
+msgid "Display a 'Powered by' line under your related posts. <strong>BEWARE! Only for the real fans.</strong>"
+msgstr "Mostra una riga 'Powered by' sotto i tuoi articoli correlati. <strong>ATTENZIONE! Solo per veri fan.</strong>"
+
+#: assets/build/admin/index.js:1
+msgid "The settings could not be loaded."
+msgstr "Impossibile caricare le impostazioni."
+
+#: assets/build/admin/index.js:1
+msgid "The installer could not be reached."
+msgstr "Impossibile contattare l'installer."
+
+#: assets/build/admin/index.js:1 assets/build/admin/index.js:25
+msgid "Installer"
+msgstr "Installer"
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are linked."
+msgstr "Fatto! I tuoi articoli sono collegati."
+
+#: assets/build/admin/index.js:1
+msgid "All set! Your posts are read."
+msgstr "Fatto! I tuoi articoli sono stati letti."
+
+#: assets/build/admin/index.js:1
+msgid "Every post shows its related posts now, and new posts are linked when you publish them."
+msgstr "Ora ogni articolo mostra i suoi articoli correlati, e i nuovi articoli vengono collegati quando li pubblichi."
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:4
+msgid "Link them from the %s tab when you are ready."
+msgstr "Collegali dalla scheda %s quando sei pronto."
+
+#: assets/build/admin/index.js:4
+msgid "Close"
+msgstr "Chiudi"
+
+#: assets/build/admin/index.js:4
+msgid "Less than a minute left"
+msgstr "Manca meno di un minuto"
+
+#. translators: %s: a number of minutes
+#: assets/build/admin/index.js:7
+msgid "About %s minute left"
+msgid_plural "About %s minutes left"
+msgstr[0] "Manca circa %s minuto"
+msgstr[1] "Mancano circa %s minuti"
+
+#. translators: 1: what the installation does now, 2: the number of that step, 3: the number of steps
+#: assets/build/admin/index.js:10
+msgid "%1$s (%2$s/%3$s)"
+msgstr "%1$s (%2$s/%3$s)"
+
+#. translators: 1: posts done, 2: all posts
+#: assets/build/admin/index.js:13
+msgid "%1$s of %2$s posts"
+msgstr "%1$s di %2$s articoli"
+
+#: assets/build/admin/index.js:13
+msgid "The installation stopped"
+msgstr "L'installazione si è interrotta"
+
+#: assets/build/admin/index.js:13
+msgid "The installation was cancelled"
+msgstr "L'installazione è stata annullata"
+
+#: assets/build/admin/index.js:13
+msgid "Linking your related posts"
+msgstr "Collegamento dei tuoi articoli correlati"
+
+#: assets/build/admin/index.js:13
+msgid "This runs in the background. You can leave this page; it goes on without you."
+msgstr "L'operazione viene eseguita in background. Puoi lasciare questa pagina; proseguirà senza di te."
+
+#. translators: %d: how far the installation is, in percent
+#: assets/build/admin/index.js:16
+msgid "%d%%"
+msgstr "%d%%"
+
+#: assets/build/admin/index.js:16
+msgid "Installation progress"
+msgstr "Avanzamento dell'installazione"
+
+#: assets/build/admin/index.js:16
+msgid "Background processing is slow on this site, so this page is doing the work now. Keep it open to finish sooner, or come back later."
+msgstr "L'elaborazione in background è lenta su questo sito, quindi ora è questa pagina a svolgere il lavoro. Tienila aperta per finire prima, oppure torna più tardi."
+
+#: assets/build/admin/index.js:16
+msgid "Something went wrong."
+msgstr "Qualcosa è andato storto."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept. Resume to finish the rest."
+msgstr "Il lavoro svolto finora viene conservato. Riprendi per completare il resto."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel"
+msgstr "Annulla"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not resume."
+msgstr "Impossibile riprendere l'installazione."
+
+#: assets/build/admin/index.js:16
+msgid "Cancel the installation?"
+msgstr "Annullare l'installazione?"
+
+#: assets/build/admin/index.js:16
+msgid "Cancel installation"
+msgstr "Annulla l'installazione"
+
+#: assets/build/admin/index.js:16
+msgid "Keep running"
+msgstr "Continua"
+
+#: assets/build/admin/index.js:16
+msgid "The installation could not be cancelled."
+msgstr "Impossibile annullare l'installazione."
+
+#: assets/build/admin/index.js:16
+msgid "What was done so far is kept, and you can resume later."
+msgstr "Il lavoro svolto finora viene conservato e potrai riprendere più tardi."
+
+#: assets/build/admin/index.js:16
+msgid "Related posts per post"
+msgstr "Articoli correlati per articolo"
+
+#: assets/build/admin/index.js:16
+msgid "Get started"
+msgstr "Inizia"
+
+#: assets/build/admin/index.js:16
+msgid "Let's link your related posts"
+msgstr "Colleghiamo i tuoi articoli correlati"
+
+#: assets/build/admin/index.js:16
+msgid "Related Posts reads your posts once to learn what each one is about, then links every post to the posts that are most related to it."
+msgstr "Related Posts legge i tuoi articoli una volta per capire di cosa parla ciascuno, poi collega ogni articolo agli articoli più affini."
+
+#: assets/build/admin/index.js:16
+msgid "It runs in the background, so you can leave this page while it works."
+msgstr "L'operazione viene eseguita in background, quindi puoi lasciare questa pagina mentre è in corso."
+
+#: assets/build/admin/index.js:16
+msgid "You can change this later, and link again at any time."
+msgstr "Puoi modificarlo in seguito e ricollegare gli articoli in qualsiasi momento."
+
+#: assets/build/admin/index.js:16
+msgid "Link the posts right away"
+msgstr "Collega subito gli articoli"
+
+#. translators: %s: the name of a tab of the settings screen, for example Installer
+#: assets/build/admin/index.js:19
+msgid "Turn this off to only read the posts now, and link them later from the %s tab."
+msgstr "Disattiva questa opzione per leggere solo gli articoli ora e collegarli in seguito dalla scheda %s."
+
+#: assets/build/admin/index.js:19 assets/build/admin/index.js:25
+msgid "The installation could not start."
+msgstr "Impossibile avviare l'installazione."
+
+#: assets/build/admin/index.js:19
+msgid "Start"
+msgstr "Avvia"
+
+#: assets/build/admin/index.js:19
+msgid "The installation is done."
+msgstr "L'installazione è completata."
+
+#: assets/build/admin/index.js:19
+msgid "The installation stopped."
+msgstr "L'installazione si è interrotta."
+
+#. translators: %s: the plugin version
+#: assets/build/admin/index.js:22
+msgid "Version %s"
+msgstr "Versione %s"
+
+#: assets/build/admin/index.js:25
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/build/admin/index.js:25
+msgid "Related Posts settings"
+msgstr "Impostazioni di Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Unsaved changes"
+msgstr "Modifiche non salvate"
+
+#: assets/build/admin/index.js:25
+msgid "You have unsaved changes."
+msgstr "Hai delle modifiche non salvate."
+
+#: assets/build/admin/index.js:25
+msgid "Discard"
+msgstr "Scarta"
+
+#: assets/build/admin/index.js:25
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+#: assets/build/admin/index.js:25
+msgid "The settings could not be saved."
+msgstr "Impossibile salvare le impostazioni."
+
+#: assets/build/admin/index.js:25
+msgid "Save changes"
+msgstr "Salva le modifiche"
+
+#: assets/build/admin/index.js:25
+msgid "More about Related Posts"
+msgstr "Altro su Related Posts"
+
+#: assets/build/admin/index.js:25
+msgid "Design the layout in the visual configurator"
+msgstr "Progetta il layout con il configuratore visuale"
+
+#: assets/build/admin/index.js:25
+msgid "Relate pages, products and custom post types"
+msgstr "Correla pagine, prodotti e tipi di contenuto personalizzati"
+
+#: assets/build/admin/index.js:25
+msgid "Choose what counts with adjustable weights"
+msgstr "Scegli cosa conta con pesi regolabili"
+
+#: assets/build/admin/index.js:25
+msgid "Exclude posts and whole categories"
+msgstr "Escludi articoli e intere categorie"
+
+#: assets/build/admin/index.js:25
+msgid "Older posts get your new posts too"
+msgstr "Anche gli articoli più vecchi ricevono i tuoi nuovi articoli"
+
+#: assets/build/admin/index.js:25
+msgid "See why posts are related"
+msgstr "Scopri perché gli articoli sono correlati"
+
+#: assets/build/admin/index.js:25
+msgid "Priority email support"
+msgstr "Supporto email prioritario"
+
+#: assets/build/admin/index.js:25
+msgid "Take your related posts further"
+msgstr "Ottieni di più dai tuoi articoli correlati"
+
+#: assets/build/admin/index.js:25
+msgid "Premium gives you control over what gets related and how it looks. It is an add-on for this plugin, so your settings and links stay as they are."
+msgstr "Premium ti dà il controllo su cosa viene correlato e su come appare. È un componente aggiuntivo di questo plugin, quindi le tue impostazioni e i tuoi collegamenti restano come sono."
+
+#: assets/build/admin/index.js:25
+msgid "See all features"
+msgstr "Vedi tutte le funzionalità"
+
+#: assets/build/admin/index.js:25
+msgid "14 day money back guarantee"
+msgstr "Garanzia di rimborso di 14 giorni"
+
+#: assets/build/admin/index.js:25
+msgid "Getting started"
+msgstr "Per iniziare"
+
+#: assets/build/admin/index.js:25
+msgid "Show related posts in your theme"
+msgstr "Mostra gli articoli correlati nel tuo tema"
+
+#: assets/build/admin/index.js:25
+msgid "Style the related posts with CSS"
+msgstr "Personalizza lo stile degli articoli correlati con CSS"
+
+#: assets/build/admin/index.js:25
+msgid "All documentation"
+msgstr "Tutta la documentazione"
+
+#: assets/build/admin/index.js:25
+msgid "Need help?"
+msgstr "Serve aiuto?"
+
+#: assets/build/admin/index.js:25
+msgid "The documentation answers most questions."
+msgstr "La documentazione risponde alla maggior parte delle domande."
+
+#: assets/build/admin/index.js:25
+msgid "Ask on the support forum"
+msgstr "Chiedi nel forum di supporto"
+
+#: assets/build/admin/index.js:25
+msgid "Enjoying Related Posts?"
+msgstr "Ti piace Related Posts?"
+
+#: assets/build/admin/index.js:25
+msgid "A review on WordPress.org helps other people find the plugin, and keeps it going."
+msgstr "Una recensione su WordPress.org aiuta altre persone a trovare il plugin e lo mantiene vivo."
+
+#: assets/build/admin/index.js:25
+msgid "Leave a review"
+msgstr "Lascia una recensione"
+
+#: assets/build/admin/index.js:25
+msgid "This page does not exist."
+msgstr "Questa pagina non esiste."
+
+#: assets/build/admin/index.js:25
+msgid "Restore default"
+msgstr "Ripristina predefinito"
+
+#: assets/build/admin/index.js:25
+msgid "This option is overwritten by a filter."
+msgstr "Questa opzione è sovrascritta da un filtro."
+
+#: assets/build/admin/index.js:25
+msgid "An installation is running. You can start another one when it is done."
+msgstr "È in corso un'installazione. Potrai avviarne un'altra quando sarà terminata."
+
+#: assets/build/admin/index.js:25
+msgid "Link new posts"
+msgstr "Collega i nuovi articoli"
+
+#: assets/build/admin/index.js:25
+msgid "Read and link the posts that are not linked yet, for example posts from before automatic linking was on. Links that exist stay as they are."
+msgstr "Leggi e collega gli articoli non ancora collegati, ad esempio quelli pubblicati prima che il collegamento automatico fosse attivo. I collegamenti esistenti restano invariati."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything"
+msgstr "Ricostruisci tutto"
+
+#: assets/build/admin/index.js:25
+msgid "Start over: remove every related post link, also the links you added by hand, read all posts again and link them. Your posts themselves are never touched."
+msgstr "Ricomincia da capo: rimuovi tutti i collegamenti agli articoli correlati, anche quelli aggiunti manualmente, rileggi tutti gli articoli e collegali. I tuoi articoli non vengono mai modificati."
+
+#: assets/build/admin/index.js:25
+msgid "Rebuild everything?"
+msgstr "Ricostruire tutto?"
+
+#: assets/build/admin/index.js:25
+msgid "Remove links and rebuild"
+msgstr "Rimuovi i collegamenti e ricostruisci"
+
+#: assets/build/admin/index.js:25
+msgid "Keep my links"
+msgstr "Mantieni i miei collegamenti"
+
+#: assets/build/admin/index.js:25
+msgid "Every related post link is removed, including the links you added by hand. This can not be undone."
+msgstr "Tutti i collegamenti agli articoli correlati verranno rimossi, compresi quelli aggiunti manualmente. L'operazione non può essere annullata."
